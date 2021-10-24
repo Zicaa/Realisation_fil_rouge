@@ -1,0 +1,203 @@
+body{
+    background-color: linear-gradient(#f7f7f2, #E4E6C3);
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    font-family: Helvetica;
+    display: grid;
+    grid-template-columns: 1fr, 1fr, 1fr;
+}
+
+/**************************************************************************************************************************************/
+/*************************************************************header********************************************************************/
+/**************************************************************************************************************************************/
+
+header{
+    text-align:center;
+    background-image:url("https://cdn.shopify.com/s/files/1/2509/2488/articles/les-bases-de-la-lithotherapie_1600x.jpg?v=1568123574");
+    width: 100%;
+    height: 400px;
+    grid-column : 1 /span 3;
+    grid-row: 1;
+}
+
+*{
+    margin: 0em;
+}
+
+.panier
+
+{   display:flex;
+	text-decoration:none;
+	color: whitesmoke;
+	text-transform:initial;
+}
+
+.panier img{
+    width: 20%;
+    margin-right: 10px;
+}
+
+/**************************************************************************************************************************************/
+/*************************************************************menu********************************************************************/
+/**************************************************************************************************************************************/
+
+#container{
+    grid-column: 1 /span 3;
+    grid-row: 2;
+}
+
+aside{
+    justify-content: center;
+    align-content: center;
+    background-color: #645244;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    grid-column: 1 /span 3;
+    grid-row: 2;
+}
+
+nav{ 
+    font-family: Helvetica;
+    font-size: 14x;
+    text-align: center;
+    justify-content: center;
+    list-style-type:none;
+    width: 100%;
+    grid-column: 1 /span 3;
+    grid-row: 2;
+}
+
+nav ul li a{
+    width: 50px;
+    text-decoration: none;
+    padding: 20px;
+    color: #FFF;
+}
+
+nav ul li a:hover{
+    text-decoration: none;
+    background-color: #FFF;
+    padding: 20px;
+    color: #877B66;
+}
+
+nav ul{
+    display: grid;
+    list-style-type:none;
+    grid-row: 2;
+}
+
+nav li{
+    grid-row: 2;
+}
+
+/**************************************************************************************************************************************/
+/*************************************************************contenu********************************************************************/
+/**************************************************************************************************************************************/
+
+h1{
+    text-align:center;
+    font-family: Helvetica;
+    font-weight: bold;
+    font-size:xx-large;
+    text-decoration: none;
+    border-bottom:dotted 1px;
+    color:#312244;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+
+h2{
+    text-align:left;
+    font-family: Helvetica;
+    font-weight: bold;
+    font-size:x-large;
+    text-decoration: none;
+    border-bottom:dotted 1px;
+    color :#f05d23;
+}
+
+#boutique{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1400px;
+}
+
+#bracelets{
+    background-color: whitesmoke;
+    border-radius: 20px;
+    margin: 20px;
+    height: 30px;
+    grid-column: 1;
+    grid-row: 3;
+}
+
+.bracelets{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.bracelets img{
+    margin: 10px;
+    border-radius: 20px;
+}
+#bagues{
+    background-color: whitesmoke;
+    border-radius: 20px;
+    margin: 20px;
+    height: 30px;
+    grid-column: 2;
+    grid-row: 3;
+}
+
+.bagues{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.bagues img{
+    margin: 10px;
+    border-radius: 20px;
+}
+
+#pierres{
+    background-color: whitesmoke;
+    border-radius: 20px;
+    margin: 20px;
+    height: 30px;
+    grid-column: 3;
+    grid-row: 3;
+}
+
+.pierres{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.pierres img{
+    margin: 10px;
+    border-radius: 20px;
+}
+
+img{
+    width: 100%;
+}
+/**************************************************************************************************************************************/
+/*************************************************************footer******************************************************************/
+/**************************************************************************************************************************************/
+
+footer{
+    background-color: black;
+    padding: 20px;
+    grid-column: 1 /span 3;
+    grid-row: 4;
+}
+
+footer nav ul{
+    flex-direction: row;

@@ -1,0 +1,64 @@
+body{
+    background-image: linear-gradient(#CCDAE0, #EDF2F4);
+    width: 100%;
+    height: 100%;
+}
+header{
+    background-image:url(https://png.pngtree.com/thumb_back/fw800/background/20190813/pngtree-hand-drawn-style-horror-halloween-bloodstains-banner-background-image_287435.jpg);
+    margin-left: auto;
+    margin-right: auto;
+    height: 200px;
+    width: 800px;
+}
+a{
+    color: #D90429;
+}
+a:hover{
+    color: #2B2D42;
+}
+#asterisques{
+    color:#D90429;
+}
+h1{
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    font-family: Impact;
+    color : #EF233C;
+    font-size:xx-large;  
+}
+h2{
+    text-align:left;
+    font-family: Helvetica;
+    font-weight: bold;
+    font-size:large;
+    text-decoration: none;
+    border-bottom:dotted 1px;
+    color : #2B2D42;
+}
+nav{
+    text-align: center;
+    list-style-type:none;
+}
+ul{
+    list-style-type:none; 
+}
+section{
+    text-align: center;
+    text-align: justify;
+}
+article{
+    border: 1px solid black;
+}
+img{
+    height: 200px;
+    width: 100px;
+    border: 1px solid black;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+footer{
+    text-align: right;
+}

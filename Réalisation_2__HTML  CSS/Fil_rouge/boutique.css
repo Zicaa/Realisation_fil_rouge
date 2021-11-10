@@ -121,31 +121,12 @@ h2{
     margin-bottom: 1400px;
 }
 
-#bracelets{
-    background-color: whitesmoke;
-    border-radius: 20px;
-    margin: 20px;
-    height: 30px;
-    grid-column: 1;
-    grid-row: 3;
-}
-
-.bracelets{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-}
-
-.bracelets img{
-    margin: 10px;
-    border-radius: 20px;
-}
 #bagues{
     background-color: whitesmoke;
     border-radius: 20px;
     margin: 20px;
     height: 30px;
-    grid-column: 2;
+    grid-column: 1;
     grid-row: 3;
 }
 
@@ -156,26 +137,6 @@ h2{
 }
 
 .bagues img{
-    margin: 10px;
-    border-radius: 20px;
-}
-
-#pierres{
-    background-color: whitesmoke;
-    border-radius: 20px;
-    margin: 20px;
-    height: 30px;
-    grid-column: 3;
-    grid-row: 3;
-}
-
-.pierres{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-}
-
-.pierres img{
     margin: 10px;
     border-radius: 20px;
 }

@@ -8,9 +8,8 @@ identifiant_utilisateur varchar(50)
 );
 
 create table droits(
-   id_droits INT,
-   id_utilisateur INT,
-   PRIMARY KEY(id_droits, id_utilisateur)
+id_droits int auto_increment primary key,
+id_utilisateur INT
 );
 
 alter table droits
@@ -29,15 +28,15 @@ ville_admin varchar (50)
 );
 
 create table client(
-   id_client int auto_increment primary key,
-   id_adresse_livraison int,
-   nom_client varchar(50),
-   prenom_client varchar(50),
-   email_client varchar(50),
-   telephone_client varchar(50),
-   adresse_client varchar (50),
-   CP_client int,
-   ville_client varchar (50)
+id_client int auto_increment primary key,
+id_adresse_livraison int,
+nom_client varchar(50),
+prenom_client varchar(50),
+email_client varchar(50),
+telephone_client varchar(50),
+adresse_client varchar (50),
+CP_client int,
+ville_client varchar (50)
 );
 
 alter table client

@@ -1,0 +1,26 @@
+body{
+    font-size: 1.2rem;
+    text-align: center;
+}
+h1,h3{
+    font-family: Arial, Helvetica, sans-serif;
+    color: springgreen;
+}
+#btJ{
+    visibility: hidden;
+}
+#nomCarteJ{
+    color: springgreen;
+}
+#valueCarteJ{
+    color: springgreen;
+}
+#resultat{
+    color: firebrick;
+}
+#btReset{
+    visibility: hidden;
+}
+h3{
+    color: springgreen;
+}

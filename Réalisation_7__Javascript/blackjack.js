@@ -123,6 +123,7 @@ function jouerBanque() {
     console.log(`Banque: ${mainBanque[0]}, ${mainBanque[1]}`)
     document.querySelector(".joueur h3").innerHTML = `Score du joueur (${calculMain(mainJoueur)})`;
     document.querySelector(".banque h3").innerHTML = `Score de la banque (${calculMain(mainBanque)})`;
+    document.querySelector(".banque h4").innerHTML = `Valeur des cartes ${mainBanque[0]}, ${mainBanque[1]}`;
 }
 
 //fonction lancer carte joueur
@@ -134,13 +135,17 @@ function jouerJoueur() {
     console.log(`Joueur: ${mainJoueur[0]}, ${mainJoueur[1]}`)
     document.querySelector(".joueur h3").innerHTML = `Score du joueur (${calculMain(mainJoueur)})`;
     document.querySelector(".banque h3").innerHTML = `Score de la banque (${calculMain(mainBanque)})`;
+    document.querySelector(".joueur h4").innerHTML = `Valeur des cartes ${mainJoueur[0]}, ${mainJoueur[1]}`;
 }
 
 
 //fonction reset de l'interface
-function reset(){};
+function reset() {
+    document.getElementById("tableBlackjack").reset();
+  }
 
-//fonction afficher les cartes dans le navigateur
+//fonction afficher le résultat dans le navigateur
+
 /*function convertValues(values){
     let hand = [];
     for (card in values)
@@ -176,7 +181,6 @@ function reset(){};
     return hand;
 }console.log(cardValue());*/
 
-
 function calculMain(){
     let handValue = 0;
     let cards =0;
@@ -189,13 +193,7 @@ function calculMain(){
     }
     return handValue;
 }
-/*---------------------------------------------------------
-                    Ecouteurs d'évènements
------------------------------------------------------------*/
 
 
-/*---------------------------------------------------------
-                            Code
------------------------------------------------------------*/
 
 

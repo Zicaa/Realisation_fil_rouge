@@ -39,18 +39,25 @@ userlist.map(user => {
     btSupprimer.addEventListener('click', event => { // 3.4
     list.removeChild(newOl); //3.4
     }); //3.4
-    
-    document.getElementById("create").addEventListener("submit", function () {
-    creerForm();
+
+});
+
+function creerForm() {
+    /*document.getElementById("create").addEventListener("submit", function () {
+    creerForm();*/
     let prenom = document.getElementById("forPrenom").value;
     let age = document.getElementById("forAge").value;
     let role = document.getElementById("forRole").value;
-    let utilisateur = document.getElementById("utilisateur").value;
-    let administrateur = document.getElementById("administrateur").value;
+    let form = prenom+age+role;
+    userlist.push= {"prenom":prenom, "age":age,"role":role};
+    alert(form, userlist);
+    console.log(userlist);
+}
+document.innerHTML = (creerForm([0],[1],[2]));
 
-    alert(`Bienvenue!`)
-    });
-});
+/*function resetForm() {
+    document.getElementById("formulaire").reset();
+};*/
 
 /*list.appendChild(newOl);
 let btn = document.createElement("BUTTON"); 

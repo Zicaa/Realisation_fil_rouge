@@ -146,11 +146,12 @@ function reset() {
 
 //fonction afficher le résultat dans le navigateur
 
-/*function convertValues(values){
+function convertValues(values){
     let hand = [];
-    for (card in values)
+    for (card in values){
     let cardValues=values[card].split(" ")[0];
-    switch (cardValues){
+
+    switch (cardValues) {
         case`A`:
         hand.push(11); break;
         case`2`:
@@ -179,11 +180,12 @@ function reset() {
         hand.push(10); break;
     }
     return hand;
-}console.log(cardValue());*/
+}
+console.log(convertValues());
 
-function calculMain(){
+function calculMain(hand){
     let handValue = 0;
-    let cards =0;
+    let cards =convertValues(hand);
     for (values in cards){
         if (cards[value] ==1){
             handValue +=11;
@@ -193,6 +195,8 @@ function calculMain(){
     }
     return handValue;
 }
+
+}console.log(calculMain(["8 pique", "5 trefle"]));
 
 
 

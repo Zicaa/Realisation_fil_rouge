@@ -1,88 +1,47 @@
-const userlist = [
-    {id: 1, prenom: "Aurélien", age: 35, role: "administrateur"},
-    {id: 2, prenom: "Simon", age: 34, role: "User"},
-    {id: 3, prenom: "Nico", age: 36, role: "User"},
-    {id: 4, prenom: "Snake", age: 40, role: "User"},
-];
-let list = document.getElementById("usersList");
-userlist.map(user => {
-    // je crée une variable à chaque tour de boucle 
-    // qui sera un nouvel element html ol (liste ordonnée)
-    let newOl = document.createElement("ol");
-    // je crée une condition pour varier les couleurs selon le role
-    if (user.role == "administrateur"){
-        newOl.style.color = "red";
-    } else {
-        newOl.style.color = "blue";
+// Chercher les différents éléments de botre page
+
+const pages = document.querySelectorAll(".page")
+const header = document.querySelector("header")
+const nbPages = pages.length // Nombres de pages du formulaire
+let pageActive = 1
+
+console.log(nbPages)
+
+// On attend le chargement de la page
+window.onload = () => {
+    // On affiche la première page du formulaire
+    document.querySelector(".page").style.display = "initial"
+    // On affiche les numéros des pages dans l'entête
+    // On parcours la liste des pages
+    pages.forEach((page, formulaire_inscription) => {
+        // On créé l'élément "numéro de page"
+        let element = document.createElement("div")
+        element.classList.add("page-num")
+        if(pageActive == formulaire_inscription+1){
+            element.classList.add("active")
+        }
+        element.innerHTML = formulaire_inscription+1
+        header.appendChild(element)
+    })
+
+    // On gère les boutons "suivant"
+    let boutons = document.querySelectorAll("button[type=button]")
+
+    for(let bouton of boutons){
+        bouton.addEventListener("click", pageSuivante);
     }
-    // j'ajoute le text à l'élément crée avec un template string
-    newOl.textContent = 
-        `ID: ${user.id};
-        Prénom: ${user.prenom};
-        Age: ${user.age};
-        Role: ${user.role}`;
-    // enfin j'ajoute cet élément à la variable qui fait appelle à la div.
-    list.appendChild(newOl);
-    newOl.addEventListener('mouseenter', event => {
-        newOl.style.backgroundColor = "lightgray";
-    });
-    newOl.addEventListener('mouseleave', event => {
-        newOl.style.backgroundColor = "white";
-    });
-    let btSupprimer = document.createElement("input");// 3.4
-    // je lui donne ses attributs
-    btSupprimer.setAttribute('type', "button");//3.4
-    btSupprimer.setAttribute('value', "Supprimer");// 3.4
-    //je pousse le bouton sur la ligne
-    newOl.appendChild(btSupprimer); // 3.4
-    // je place une écoute de clic du bouton pou supprimer la ligne
-    btSupprimer.addEventListener('click', event => { // 3.4
-    list.removeChild(newOl); //3.4
-    }); //3.4
-
-});
-
-function creerForm() {
-    /*document.getElementById("create").addEventListener("submit", function () {
-    creerForm();*/
-    let prenom = document.getElementById("forPrenom").value;
-    let age = document.getElementById("forAge").value;
-    let role = document.getElementById("forRole").value;
-    let form = prenom+age+role;
-    userlist.push= {"prenom":prenom, "age":age,"role":role};
-    alert(form, userlist);
-    console.log(userlist);
 }
-document.innerHTML = (creerForm([0],[1],[2]));
 
-/*function resetForm() {
-    document.getElementById("formulaire").reset();
-};*/
+/* Cette fonction fait avancer le formulaire d'une page */
 
-/*list.appendChild(newOl);
-let btn = document.createElement("BUTTON"); 
-let t = document.createTextNode("SUPPRIMER");
-btn.appendChild(t);                                
-document.body.appendChild(btn);*/
+function pageSuivante(){
+    // On incrémente pageActive pour dire qu'on passe à la page suivante
+    pageActive++
+    // On masque toutes les pages
+    for(let page of pages){
+        page.style.display = "none"
+    }
 
-/*let over = document.createElement("ul");
-let test = document.getElementsByClassName("ul");
-test.addEventListener("mouseenter", function( event ) {
-event.target.style.color = "grey";
-});
-
-test.addEventListener("mouseleave", function( event ) {
-  event.target.style.color = "white";
-});
-
-let over = document.createElement("ul");
-document.querySelector(`ul`).addEventListener(`mouseenter`,entering);
-document.querySelector(`ul`).addEventListener(`mouseleave`,entering);
-function entering(ev){
-    ev.currentTarget.style.backgroundColor = `grey`;
-    console.log(`mouseenter ul`);
+    // On affiche la page suivante
+    this.parentElement.nextElementSibling.style.display = "initial"
 }
-function leaving(ev){
-    ev.currentTarget.style.backgroundColor=`grey`;
-    console.log(`mouseleave ul`);
-}*/

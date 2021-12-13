@@ -17,6 +17,7 @@ window.onload = () => {
         // On créé l'élément "numéro de page"
         let element = document.createElement("div")
         element.classList.add("page-num")
+        element.id = "num" + (formulaire_inscription +1)
         if(pageActive == formulaire_inscription+1){
             element.classList.add("active")
         }
@@ -37,6 +38,7 @@ window.onload = () => {
 function pageSuivante(){
     // On incrémente pageActive pour dire qu'on passe à la page suivante
     pageActive++
+
     // On masque toutes les pages
     for(let page of pages){
         page.style.display = "none"
@@ -44,4 +46,13 @@ function pageSuivante(){
 
     // On affiche la page suivante
     this.parentElement.nextElementSibling.style.display = "initial"
+
+    // On désactive la page active
+    document.querySelector(".active").classList.remove("active")
+
+    // On incrémente pageActive pour dire qu'on passe à la page suivante
+    pageActive+
+
+    // On "active" le nouveau numéro
+    document.querySelector("#num"+pageActive).classList.add("active")
 }

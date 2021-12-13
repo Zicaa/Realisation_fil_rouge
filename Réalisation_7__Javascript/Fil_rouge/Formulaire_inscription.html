@@ -1,0 +1,22 @@
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exo tableau</title>
+</head>
+<body>
+    <fieldset>
+        <legend>Liste d'utilisateurs</legend>
+        <form id="formulaire">
+            <span>Prénom: <input id="forPrenom" type="text"/></span>
+            <span>Age: <input id="forAge" type="number"/></span>
+            <span><label for="role">Role: </label><select id="forRole" name="roles"><option value=""></option>
+                <option value="utilisateur">utilisateur</option>
+                <option value="administrateur">administrateur</option></select></span>
+            <span><button type ="button" id="create" onclick="creerForm()">Créer</button></span>
+        </form>
+    <div id="usersList">TITRE</div>
+<script src="Formulaire_inscription.js"></script>
+</body>
+</html>

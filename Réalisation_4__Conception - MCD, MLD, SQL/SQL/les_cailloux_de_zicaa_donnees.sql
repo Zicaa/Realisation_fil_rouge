@@ -14,8 +14,8 @@ insert into droits (id_droits, id_utilisateur) values
 ("1", "2");
 
 insert into livraison (id_client, nom_client, prenom_client, adresse_livraison, CP_livraison, ville_livraison) values
-("2", "dupont", "martin", "15 rue duclient","34000","montpellier"),
-("2", "dupont", "martin", "15 rue duclient","34000","montpellier");
+("1", "dupont", "martin", "15 rue duclient","34000","montpellier"),
+("3", "dupont", "martin", "15 rue duclient","34000","montpellier");
 
 insert into paiement (id_paiement, paiement_cb, paiement_paypal) values
 ("1","paiement par cb","nul");
@@ -31,7 +31,3 @@ insert into utilisateur (id_utilisateur, identifiant_utilisateur) values
 ("1","identifiant1"),
 ("2","identifiant2"),
 ("3","identifiant3");
-
-
-
-

@@ -1,5 +1,5 @@
 drop database if exists les_cailloux_de_zicaa;
-create database les_cailloux_de_zicaa;
+create database les_cailloux_de_zicaa CHARACTER SET utf8 COLLATE utf8_general_ci;
 use les_cailloux_de_zicaa;
 
 create table utilisateur(

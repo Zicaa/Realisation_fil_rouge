@@ -4,6 +4,7 @@ const suivant = document.querySelector(".right");
 const precedent = document.querySelector(".left");
 let compteur = 16;
 
+// je crée ma fonction qui incrémente chaque image de 1
 function slideSuivante(){
     items[compteur].classList.remove("active");
 
@@ -18,6 +19,7 @@ function slideSuivante(){
 }
 suivant.addEventListener("click", slideSuivante)
 
+// je crée ma fonction qui décrémente chaque image de 1
 function slidePrecedente(){
     items[compteur].classList.remove("active");
 

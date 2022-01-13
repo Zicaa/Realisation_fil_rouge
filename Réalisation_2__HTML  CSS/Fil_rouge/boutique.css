@@ -115,10 +115,57 @@ h2{
     color :#f05d23;
 }
 
+.container {
+    width: 800;
+    height: 400;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.slider img{
+    max-width:100%;
+    display:none;
+}
+
+img.active {
+    display : block;
+    animation : fade 0.8s;
+}
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.cont-btn {
+    width: 100%;
+    height : auto;
+    background-color: whitesmoke;
+    box-shadow: 0 10px 10px rgba(0,0,0,0.3);
+    display: flex;
+    justify-content: center;
+}
+
+.btn-nav {
+    font-size: 50px;
+    margin: 0 15px;
+    cursor: pointer;
+}
+
 #boutique{
     display: flex;
     justify-content: space-between;
     margin-bottom: 1400px;
+}
+
+.bouton{
+    position:absolute;
+    width:70px;
+    cursor:pointer;
+    top:150px;
 }
 
 #bagues{

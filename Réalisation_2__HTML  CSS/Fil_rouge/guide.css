@@ -51,6 +51,7 @@ aside{
     padding-bottom: 20px;
     grid-column: 1 /span 3;
     grid-row: 2;
+    position: fixed;
 }
 
 nav{ 
@@ -86,6 +87,11 @@ nav ul{
 
 nav li{
     grid-row: 2;
+}
+
+.anim-nav {
+    background: black;
+    color: whitesmoke;
 }
 
 /**************************************************************************************************************************************/

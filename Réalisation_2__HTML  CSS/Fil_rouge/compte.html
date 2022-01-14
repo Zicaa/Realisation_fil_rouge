@@ -15,6 +15,7 @@
                         <li class="liens"><a href="boutique.html">BOUTIQUE</a></li>
                         <li class="liens"><a href="guide.html">GUIDE DES PIERRES</a></li>
                         <li class="liens"><a href="compte.html">MON COMPTE</a></li>
+                        <li class="liens"><a href="reserves_API.html"target="_blank">RESERVES NATURELLES DE LA REGION</a></li>
                         <li><input type="search" id="site-search" name="q"aria-label="Search through site content"><button>Rechercher</button></li>
                         <li><div class="panier"><img src="../Fil_rouge/images/outline.png">Mon panier</li></div>
                     </ul>       
@@ -23,21 +24,30 @@
         <body>
                 <fieldset>
                     <legend><h1>Me connecter</h1></legend>
-                    <form action="../../Réalisation_5__Langage/Réalisation_5_ter__Javascript/formulaire_inscription.html" method="get" target="_blank">
-                        <button type="submit">Connexion</button>
+                    <form method= "POST" action="monProgramme.php">
+                        <label for="name">Identifiant <div id="asterisques">*</label>
+                        <input type= "text" name= "Nom" size= "20" placeholder="Ex : Mon Identifiant" minlength="2" maxlength="20"id="nom"/></imput>
+                    </div></form><br>
+                    <form method= "POST" action="monProgramme.php">
+                        <label for="mdp">Mot de passe <div id="asterisques">*</label>
+                        <input type= "mdp" name= "mdp" size= "20" placeholder="Ex : azerty" minlength="2"maxlength="30"id="email"/></imput>
+                    </div></form><br>
+                    <form method= "POST" action="monProgramme.php">
+                        <input type="submit" value="Envoyer"/>
                     </form>
                     <legend><h1>Créer mon compte</h1></legend>
-                    <form action="../../Réalisation_5__Langage/Réalisation_5_ter__Javascript/formulaire_inscription.html" method="get" target="_blank">
+                    <form action="../Fil_rouge/formulaire_inscription.html" method="get" target="_blank">
                         <button type="submit">Création du compte</button>
                     </form>
                 </fieldset>
-    <footer>
-            <nav>
-                <ul>
-                    <li><a href="../Fil_rouge/contact.html">Contact</a></li>
-                    <li><a href="../Fil_rouge/mentions_legales.html">Mentions légales</a></li>
-                    <li><a href="../Fil_rouge/partenaire.html">Nos partenaires</a></li>
-                </ul>
-            </nav>
-    </footer>
-    </body>
+            <footer>
+                    <nav>
+                        <ul>
+                            <li><a href="../Fil_rouge/contact.html">Contact</a></li>
+                            <li><a href="../Fil_rouge/mentions_legales.html">Mentions légales</a></li>
+                            <li><a href="../Fil_rouge/partenaire.html">Nos partenaires</a></li>
+                        </ul>
+                    </nav>
+                <script src="navbar.js"></script>
+            </footer>
+            </body>

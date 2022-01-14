@@ -57,3 +57,8 @@ body{
 img{
     border-radius: 20px;
 }
+
+.anim-nav {
+    background: black;
+    color: whitesmoke;
+}

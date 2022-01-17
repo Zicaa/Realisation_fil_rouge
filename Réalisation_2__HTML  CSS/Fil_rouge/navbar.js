@@ -1,3 +1,4 @@
+// Je cherche les différents éléments de la page
 const navigation = document.querySelector("aside");
 
 window.addEventListener("scroll",()=> {

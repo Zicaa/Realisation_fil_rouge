@@ -1,10 +1,11 @@
+// Je cherche les différents éléments de la page
 const items = document.querySelectorAll("img");
 const nbSlide = items.length;
 const suivant = document.querySelector(".right");
 const precedent = document.querySelector(".left");
 let compteur = 16;
 
-// je crée ma fonction qui incrémente chaque image de 1
+// Je crée ma fonction qui incrémente chaque image de 1
 function slideSuivante(){
     items[compteur].classList.remove("active");
 
@@ -19,7 +20,7 @@ function slideSuivante(){
 }
 suivant.addEventListener("click", slideSuivante)
 
-// je crée ma fonction qui décrémente chaque image de 1
+// Je crée ma fonction qui décrémente chaque image de 1
 function slidePrecedente(){
     items[compteur].classList.remove("active");
 

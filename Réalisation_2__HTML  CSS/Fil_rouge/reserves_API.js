@@ -1,9 +1,12 @@
+// Je cherche les différents éléments de la page
 const url = 'https://data.laregion.fr/api/records/1.0/search/?dataset=reserves-naturelles-regionales-rnr&q=&facet=nom_dep';
 
 let display = document.getElementById('display');
-let jsonData;
+// Je récupère les données du fichier json
+let jsonData; 
 let zone = document.getElementById("zone");
 
+// Je créé une fonction qui affiche toutes les réserves de la région
 function showAllReserve() {
     fetch(url)
     .then(response => response.json())

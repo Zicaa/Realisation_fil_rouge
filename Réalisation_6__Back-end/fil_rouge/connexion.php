@@ -2,24 +2,9 @@
     session_start();
     require_once 'config.php';
 
-    if(isset($_POST['nom']) 
-    && isset ($_POST['prenom'])
-    && isset ($_POST['adresse'])
-    && isset ($_POST['CP'])
-    && isset ($_POST['ville'])
-    && isset ($_POST['tel'])
-    && isset ($_POST['email'])
-    && isset ($_POST['pseudo'])
-    && isset ($_POST['pass']))
+    if(isset ($_POST['email']) && isset ($_POST['pass']))
     {
-        $nom = htmlspecialchars($_POST['nom']);
-        $prenom = htmlspecialchars($_POST['prenom']);
-        $adresse = htmlspecialchars($_POST['adresse']);
-        $CP = htmlspecialchars($_POST['CP']);
-        $ville = htmlspecialchars($_POST['ville']);
-        $tel = htmlspecialchars($_POST['tel']);
         $email = htmlspecialchars($_POST['email']);
-        $pseudo = htmlspecialchars($_POST['pseudo']);
         $pass = htmlspecialchars($_POST['pass']);
 
         $check = $bdd->prepare('SELECT pseudo_client, email_client, mdp_client FROM client WHERE email = ?');
@@ -29,8 +14,15 @@
 
         if($row == 1)
         {
+            if(filter_var($email, FILTER_VALIDATE_EMAIL))
+            {
+                $password = hash('sha256', $password);
 
+                if(data ['password'] === $password)
+                {
+                    $_SESSION['client'] = $data['pseudo'];
+                    header('location:landing.php');
+                }else header('location:index.php?login_err=password');
+            }else header('location:index.php?login_err=email');
         }else header('location:index.php?login_err=already');
-
-
     }else header('location:index.php');

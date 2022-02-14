@@ -24,30 +24,26 @@
         <body>
                 <fieldset>
                     <legend><h1>Me connecter</h1></legend>
-                    <form method= "POST" action="monProgramme.php">
-                        <label for="name">Identifiant <div id="asterisques">*</label>
-                        <input type= "text" name= "Nom" size= "20" placeholder="Ex : Mon Identifiant" minlength="2" maxlength="20"id="nom"/></imput>
-                    </div></form><br>
-                    <form method= "POST" action="monProgramme.php">
-                        <label for="mdp">Mot de passe <div id="asterisques">*</label>
-                        <input type= "mdp" name= "mdp" size= "20" placeholder="Ex : azerty" minlength="2"maxlength="30"id="email"/></imput>
-                    </div></form><br>
-                    <form method= "POST" action="monProgramme.php">
-                        <input type="submit" value="Envoyer"/>
+                    <form action="http://localhost/fil_rouge/index.php" method="get" target="_blank">
+                        <button type="submit">Connexion</button>
+                    </form>
                     </form>
                     <legend><h1>Créer mon compte</h1></legend>
-                    <form action="http://localhost/fil_rouge/index.php" method="get" target="_blank">
+                    <form action="http://localhost/fil_rouge/inscription.php" method="get" target="_blank">
                         <button type="submit">Création du compte</button>
+                        <div>
+                            <img src ="Images/Logo_site.png" alt="logo"/>
+                        </div>
                     </form>
                 </fieldset>
             <footer>
-                    <nav>
-                        <ul>
-                            <li><a href="../Fil_rouge/contact.html">Contact</a></li>
-                            <li><a href="../Fil_rouge/mentions_legales.html">Mentions légales</a></li>
-                            <li><a href="../Fil_rouge/partenaire.html">Nos partenaires</a></li>
-                        </ul>
-                    </nav>
+                <nav>
+                    <ul>
+                        <li><a href="../Fil_rouge/contact.html">Contact</a></li>
+                        <li><a href="../Fil_rouge/mentions_legales.html">Mentions légales</a></li>
+                        <li><a href="../Fil_rouge/partenaire.html">Nos partenaires</a></li>
+                    </ul>
+                </nav>
                 <script src="navbar.js"></script>
             </footer>
             </body>

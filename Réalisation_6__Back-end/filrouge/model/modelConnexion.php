@@ -1,18 +1,18 @@
 <?php
 
 try{
-    $query = $database->query('SELECT * FROM utilisateur');
+    $query = $database->query('SELECT * FROM client');
 
     $check = false;
 
     while($data = $query->fetch()){
-        if($data['login_utilisateur'] == $login && $data['mdp_utilisateur'] == $mdp){
+        if($data['pseudo_client'] == $login && $data['mdp_client'] == $mdp){
             $check = true;
         } 
     }
 
     if($check == true){
-        header('Location: ../controler/controlerStocks.php');
+        header('Location: ../controler/controlerCompte.php');
     } else {
         echo "<script type='text/javascript'>alert('Login ou mot de passe incorrect!');</script>";
     }

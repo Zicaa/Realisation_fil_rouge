@@ -1,12 +1,12 @@
 <?php
 
-    // ajout du formulaire html
+    // ajout de la vue
     require '../vue/vueConnexion.php';
 
-    // connexion à mon localhost
+    // connexion à la bdd
     require '../connectDatabase.php';
 
-    // validation du formulaire html
+    // validation formulaire
     if(isset($_POST['login'], $_POST['mdp'])){
         $login = $_POST['login'];
         $mdp = $_POST['mdp'];

@@ -21,7 +21,7 @@
                                 <button type ="submit" class="btn btn-primary btn-block">Connexion</button>
                             </div>
                     </form>
-                <p class="text-center"><a href="vueInscription.php">Inscription</a></p>
+                <button type ="submit"><a href="vueInscription.php">Inscription</a></button>
             </div>
         </main>
     </body>

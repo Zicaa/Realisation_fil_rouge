@@ -29,7 +29,8 @@ try {
 
     if ($execution){
         echo "<script type='text/javascript'>alert('Votre compte a bien été créé!');</script>";
-    }
+    } header('Location: ../controler/controlerCompte.php');
+
     } catch (EXCEPTION $e) {
         die("Votre compte n'a pas pu être créé.");
 }

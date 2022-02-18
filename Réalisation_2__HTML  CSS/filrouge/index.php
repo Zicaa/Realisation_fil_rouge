@@ -11,13 +11,13 @@
             <aside>
                 <nav class="liens">
                     <ul>
-                        <li class="liens"><a href="index.html">ACCUEIL</a></li>
-                        <li class="liens"><a href="boutique.html">BOUTIQUE</a></li>
-                        <li class="liens"><a href="guide.html">GUIDE DES PIERRES</a></li>
-                        <li class="liens"><a href="compte.html">MON COMPTE</a></li>
+                        <li class="liens"><a href="index.php">ACCUEIL</a></li>
+                        <li class="liens"><a href="boutique.php">BOUTIQUE</a></li>
+                        <li class="liens"><a href="guide.php">GUIDE DES PIERRES</a></li>
+                        <li class="liens"><a href="compte.php">MON COMPTE</a></li>
                         <li class="liens"><a href="reserves_API.html"target="_blank">RESERVES NATURELLES DE LA REGION</a></li>
                         <li><input type="search" id="site-search" name="q"aria-label="Search through site content"><button>Rechercher</button></li>
-                        <li><div class="panier"><img src="../Fil_rouge/images/outline.png">Mon panier</li></div>
+                        <li><div class="panier"><img src="../filrouge/images/outline.png">Mon panier</li></div>
                     </ul>       
                 </nav>
             </aside>
@@ -43,7 +43,7 @@
                         Sed gravida vulputate lorem, vitae vestibulum lorem dignissim quis. Sed quam erat, commodo vitae mi vitae, 
                         feugiat consequat elit. Praesent varius ut mi vel pellentesque.
                     </p>
-                <img src="../Fil_rouge/images/accueil.jpg"id=fondecran class=fondecran alt="fondecran"/>
+                <img src="../filrouge/images/accueil.jpg"id=fondecran class=fondecran alt="fondecran"/>
             </article>
             <article>
                     <h1>LES VERTUS THERAPEUTHIQUES DES PIERRES</h1>
@@ -71,7 +71,7 @@
                         Sed gravida vulputate lorem, vitae vestibulum lorem dignissim quis. Sed quam erat, commodo vitae mi vitae, 
                         feugiat consequat elit. Praesent varius ut mi vel pellentesque.
                         </p>
-                        <img src="D:\Formation ADRAR\Realisation_fil_rouge\Réalisation_2__HTML  CSS\Fil_rouge\Images\accueil2.jpg"id=fondecran class=fondecran alt=/>
+                        <img src="..\filrouge\images\accueil2.jpg"id=fondecran class=fondecran alt=/>
             </article>
             <article>
                     <h1>NOTRE LIEN AVEC LA NATURE</h1>
@@ -99,9 +99,9 @@
     <footer>
             <nav>
                 <ul>
-                    <li><a href="../Fil_rouge/contact.html">Contact</a></li>
-                    <li><a href="../Fil_rouge/mentions_legales.html">Mentions légales</a></li>
-                    <li><a href="../Fil_rouge/partenaire.html">Nos partenaires</a></li>
+                    <li><a href="contact.php">Contact</a></li>
+                    <li><a href="mentions_legales.php">Mentions légales</a></li>
+                    <li><a href="partenaire.php">Nos partenaires</a></li>
                 </ul>
             </nav>
         <script src="navbar.js"></script>

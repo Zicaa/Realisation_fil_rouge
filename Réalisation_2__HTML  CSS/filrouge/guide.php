@@ -11,13 +11,13 @@
             <aside>
                 <nav class="liens">
                     <ul>
-                        <li class="liens"><a href="index.html">ACCUEIL</a></li>
-                        <li class="liens"><a href="boutique.html">BOUTIQUE</a></li>
-                        <li class="liens"><a href="guide.html">GUIDE DES PIERRES</a></li>
-                        <li class="liens"><a href="compte.html">MON COMPTE</a></li>
+                        <li class="liens"><a href="index.php">ACCUEIL</a></li>
+                        <li class="liens"><a href="boutique.php">BOUTIQUE</a></li>
+                        <li class="liens"><a href="guide.php">GUIDE DES PIERRES</a></li>
+                        <li class="liens"><a href="compte.php">MON COMPTE</a></li>
                         <li class="liens"><a href="reserves_API.html"target="_blank">RESERVES NATURELLES DE LA REGION</a></li>
                         <li><input type="search" id="site-search" name="q"aria-label="Search through site content"><button>Rechercher</button></li>
-                        <li><div class="panier"><img src="../Fil_rouge/images/outline.png">Mon panier</li></div>
+                        <li><div class="panier"><img src="../filrouge/images/outline.png">Mon panier</li></div>
                     </ul>       
                 </nav>
             </aside>
@@ -26,7 +26,7 @@
                         <h1>Guide pratique des pierres</h1>
                         <h2>Les améthystes</h2>
                     <div>
-                    <img src="../Fil_rouge/images/Amethyste_article1.gif" alt="image article"/>
+                    <img src="../filrouge/images/Amethyste_article1.gif" alt="image article"/>
                         <p>
                             L’améthyste tient son nom de son utilisation antique contre l’ivresse et les excès. Autrefois elle était des fois utilisée comme calice pour se prémunir d’éventuels tentatives
                             d’empoisonnement lors de banquets. C’est la pierres des papes symboliquement elle représente la spiritualité. Cette pierre à une couleur allant du violet clair transparent au 
@@ -39,7 +39,7 @@
                 <article>
                         <h2>Les citrines </h2>
                     <div>
-                    <img src="../Fil_rouge/images/citrine_article2.gif"alt="image article"/>
+                    <img src="../filrouge/images/citrine_article2.gif"alt="image article"/>
                         <p>
                             La citrine est une pierres jaune plus pale voir grise, bien que l’on rencontre plus de citrine jaune doré à orangé. cette dernière ne sont généralement pas des citrines 
                             naturelles mais des pierres obtenues par intervention de l’homme, une améthyste chauffée à haute température devient une citrine dite brulée. Le nom citrine vient du grec 
@@ -50,7 +50,7 @@
                 <article>
                         <h2>Les cornalines</h2>
                     <div>
-                    <img src="../Fil_rouge/images/cornaline_article2.gif"alt="image article"/>
+                    <img src="../filrouge/images/cornaline_article2.gif"alt="image article"/>
                         <p>
                             Le nom cornaline fait référence au fruit rouge du cornouiller cornus mas en latin, qui c’est une variété de calcédoine de couleur 
                             orange à rouge. La cornaline aide à prendre foi en soi même et à devenir d’avantage spontané. elle aide à aimer et accepter la vie, la prendre comme 
@@ -62,7 +62,7 @@
                 <article>
                     <h2>Les aventurines</h2>
                     <div>
-                    <img src="../Fil_rouge/images/Aventurine_article4.gif"alt="image article"/>
+                    <img src="../filrouge/images/Aventurine_article4.gif"alt="image article"/>
                         <p>
                             L'Aventurine est une belle pierre verte légèrement translucide. Elle possède parfois de fines paillettes dues à des inclusions de fushsite. 
                             C'est un symbole d'ouverture d'esprit, de chance et de bonne fortune. A travers cet article nous vous dévoilerons l'origine de la pierre 
@@ -74,21 +74,22 @@
             <div id="galerie">
                     <h3>Nos produits</h3>
                     <div class="galerie">
-                        <a href="labradorite.html"><img src="../Fil_rouge/images/labradorite.gif"></a>
-                        <a href="pierredelune.gif"><img src="../Fil_rouge/images/pierredelune.gif"></a>
-                        <a href="amethyste.gif"><img src="../Fil_rouge/images/amethyste.gif"></a>
-                        <a href="citrine.gif"><img src="../Fil_rouge/images/citrine.gif"></a>
-                        <a href="cornaline.gif"><img src="../Fil_rouge/images/cornaline.gif"></a>
+                        <a href="labradorite.html"><img src="../filrouge/images/labradorite.gif"></a>
+                        <a href="pierredelune.gif"><img src="../filrouge/images/pierredelune.gif"></a>
+                        <a href="amethyste.gif"><img src="../filrouge/images/amethyste.gif"></a>
+                        <a href="citrine.gif"><img src="../filrouge/images/citrine.gif"></a>
+                        <a href="cornaline.gif"><img src="../filrouge/images/cornaline.gif"></a>
                     </div>
             </div>
         <footer>
                 <nav>
                     <ul>
-                        <li><a href="../Fil_rouge/contact.html">Contact</a></li>
-                        <li><a href="../Fil_rouge/mentions_legales.html">Mentions légales</a></li>
-                        <li><a href="../Fil_rouge/partenaire.html">Nos partenaires</a></li>
+                        <li><a href="contact.php">Contact</a></li>
+                        <li><a href="mentions_legales.php">Mentions légales</a></li>
+                        <li><a href="partenaire.php">Nos partenaires</a></li>
                     </ul>
                 </nav>
             <script src="navbar.js"></script>
         </footer>
     </body>
+</html>

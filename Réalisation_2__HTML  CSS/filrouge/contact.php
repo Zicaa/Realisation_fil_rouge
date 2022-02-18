@@ -11,13 +11,13 @@
             <aside>
                 <nav class="liens">
                     <ul>
-                        <li class="liens"><a href="index.html">ACCUEIL</a></li>
-                        <li class="liens"><a href="boutique.html">BOUTIQUE</a></li>
-                        <li class="liens"><a href="guide.html">GUIDE DES PIERRES</a></li>
-                        <li class="liens"><a href="compte.html">MON COMPTE</a></li>
+                        <li class="liens"><a href="index.php">ACCUEIL</a></li>
+                        <li class="liens"><a href="boutique.php">BOUTIQUE</a></li>
+                        <li class="liens"><a href="guide.php">GUIDE DES PIERRES</a></li>
+                        <li class="liens"><a href="compte.php">MON COMPTE</a></li>
                         <li class="liens"><a href="reserves_API.html"target="_blank">RESERVES NATURELLES DE LA REGION</a></li>
                         <li><input type="search" id="site-search" name="q"aria-label="Search through site content"><button>Rechercher</button></li>
-                        <li><div class="panier"><img src="../Fil_rouge/images/outline.png">Mon panier</li></div>
+                        <li><div class="panier"><img src="../images/outline.png">Mon panier</li></div>
                     </ul>       
                 </nav>
             </aside>
@@ -46,11 +46,12 @@
     <footer>
             <nav>
                 <ul>
-                    <li><a href="../Fil_rouge/contact.html">Contact</a></li>
-                    <li><a href="../Fil_rouge/mentions_legales.html">Mentions légales</a></li>
-                    <li><a href="../Fil_rouge/partenaire.html">Nos partenaires</a></li>
+                    <li><a href="contact.php">Contact</a></li>
+                    <li><a href="mentions_legales.php">Mentions légales</a></li>
+                    <li><a href="partenaire.php">Nos partenaires</a></li>
                 </ul>
             </nav>
         <script src="navbar.js"></script>
     </footer>
     </body>
+</html>

@@ -25,7 +25,7 @@ header{
     margin: 0em;
 }
 
-.panier
+.liens
 
 {   display:flex;
 	text-decoration:none;
@@ -33,7 +33,7 @@ header{
 	text-transform:initial;
 }
 
-.panier img{
+.liens img{
     width: 20%;
     margin-right: 10px;
 }

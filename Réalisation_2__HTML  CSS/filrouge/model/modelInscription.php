@@ -1,5 +1,4 @@
 <?php
-
 try {
     $query = $database->prepare("INSERT INTO client SET 
         nom_client = :nom_client,
@@ -12,8 +11,6 @@ try {
         pseudo_client = :pseudo_client,
         mdp_client = :mdp_client"
     ); 
-    
-    //$mdp = hash('sha256', $mdp);
     
     $execution = $query->execute(array(
         'nom_client' => $nom, 
@@ -28,11 +25,11 @@ try {
     ));
 
     if ($execution){
-        echo "<script type='text/javascript'>alert('Votre compte a bien été créé!');</script>";
-    } header('Location: ../controler/controlerCompte.php');
+        //$mdp = hash('sha256', $mdp);
+        echo "<script type='text/javascript'>alert('Votre compte a bien été créé');</script>";
+    }   header('Location: ../controler/controlerCompte.php');
 
     } catch (EXCEPTION $e) {
         die("Votre compte n'a pas pu être créé.");
 }
-
 ?>

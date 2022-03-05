@@ -11,25 +11,26 @@
 
         body{
             display: grid;
-            grid-template-columns: repeat(4, 3fr);
+            grid-template-columns: repeat(1fr, 1fr, 1fr);
         }
 
         nav{
             top: 0;
             left: 0;
-            width: 80%;
+            width: 100%;
             height: 100%;
             background-color: #645244;
-            grid-column: 1;
-            grid-row: 1 / 50;
+            display: flex;
+            flex-direction: row;
         }
 
         ul{
-            position: fixed;
-            margin-top: 2vh;
-            margin-left: 2.5vw;
+            position: absolute;
+            margin-top: 2em;
+            margin-left: 2.5em;
             list-style: none;
             text-decoration: none;
+            flex-direction: row;
         }
 
         input{
@@ -49,16 +50,16 @@
 
         div{
             width: 100%;
-            margin: 2vw;
+            margin: 2em;
         }
 
         div img{
             width: 100%;
-            margin: 2vw;
+            margin: 2em;
         }
 
         section{
-            padding: 2vw;
+            padding: 2em;
         }
 
         p{

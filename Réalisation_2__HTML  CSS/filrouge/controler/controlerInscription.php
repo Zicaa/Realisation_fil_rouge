@@ -1,12 +1,11 @@
 <?php
 
-    // ajout du formulaire html
+    // ajout de la vue
     require '../vue/vueInscription.php';
 
-    // connexion au localhost
+    // connexion à la bdd
     require '../config/connectDatabase.php';
 
-    // vérification des champs du formulaire
         if(isset($_POST['nom'])
         && isset($_POST['prenom'])
         && isset($_POST['adresse'])
@@ -28,7 +27,7 @@
             $pseudo = $_POST['pseudo'];
             $mdp = $_POST['mdp'];
 
-        require '../model/modelInscription.php';
+    // validation formulaire   
+    require '../model/modelInscription.php';
     }
-    
 ?>

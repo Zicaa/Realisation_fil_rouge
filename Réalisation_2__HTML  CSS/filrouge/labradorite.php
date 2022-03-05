@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8" />
         <title>Les cailloux de Zicaa</title>
-        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="guide.css">
         <link rel="stylesheet" href="responsive_index.css" media="only screen and (max-width:800px)">
     </head>
     <body>
@@ -49,35 +49,35 @@
                     <table>
                         <caption>Nos bijoux en labradorite</caption>
                         <tr>
-                            <th><img src="../Fil_rouge/images/labradorite.gif" alt="labradorite"></th>
+                            <th><img src="../filrouge/images/labradorite.gif" alt="labradorite"></th>
                             <th>Ceci est le premier bijoux. Il est beau et pas cher. Achetez ce bijoux. 1€</th>
                             <th><input class="button styled"
                                 type="button"
                                 value="Ajouter au panier"></th>
                         </tr>
                         <tr>
-                            <th><img src="../Fil_rouge/images/labradorite.gif" alt="labradorite"></th>
+                            <th><img src="../filrouge/images/labradorite.gif" alt="labradorite"></th>
                             <th>Ceci est le second bijoux. Il est beau et pas cher. Achetez ce bijoux. 1€</th>
                             <th><input class="button styled"
                                 type="button"
                                 value="Ajouter au panier"></th>
                         </tr>
                         <tr>
-                            <th><img src="../Fil_rouge/images/labradorite.gif" alt="labradorite"></th>
+                            <th><img src="../filrouge/images/labradorite.gif" alt="labradorite"></th>
                             <th>Ceci est le troisième bijoux. Il est beau et pas cher. Achetez ce bijoux. 1€</th>
                             <th><input class="button styled"
                                 type="button"
                                 value="Ajouter au panier"></th>
                         </tr>
                         <tr>
-                            <th><img src="../Fil_rouge/images/labradorite.gif" alt="labradorite"></th>
+                            <th><img src="../filrouge/images/labradorite.gif" alt="labradorite"></th>
                             <th>Ceci est le quatrième bijoux. Il est beau et pas cher. Achetez ce bijoux. 1€</th>
                             <th><input class="button styled"
                                 type="button"
                                 value="Ajouter au panier"></th>
                         </tr>
                         <tr>
-                            <th><img src="../Fil_rouge/images/labradorite.gif" alt="labradorite"></th>
+                            <th><img src="../filrouge/images/labradorite.gif" alt="labradorite"></th>
                             <th>Ceci est le cinquième bijoux. Il est beau et pas cher. Achetez ce bijoux. 1€</th>
                             <th><input class="button styled"
                                 type="button"
@@ -89,11 +89,11 @@
             <div id="galerie">
                     <h3>Nos produits</h3>
                     <div class="galerie">
-                        <a href="../Fil_rouge/labradorite.html"><img src="../Fil_rouge/images/labradorite.gif"></a>
-                        <a href="pierredelune.gif"><img src="../Fil_rouge/images/pierredelune.gif"></a>
-                        <a href="amethyste.gif"><img src="../Fil_rouge/images/amethyste.gif"></a>
-                        <a href="citrine.gif"><img src="../Fil_rouge/images/citrine.gif"></a>
-                        <a href="cornaline.gif"><img src="../Fil_rouge/images/cornaline.gif"></a>
+                        <a href="labradorite.php"><img src="../filrouge/images/labradorite.gif"></a>
+                        <a href="pierredelune.gif"><img src="../filrouge/images/pierredelune.gif"></a>
+                        <a href="amethyste.gif"><img src="../filrouge/images/amethyste.gif"></a>
+                        <a href="citrine.gif"><img src="../filrouge/images/citrine.gif"></a>
+                        <a href="cornaline.gif"><img src="../filrouge/images/cornaline.gif"></a>
                     </div>
             </div>
         <footer>

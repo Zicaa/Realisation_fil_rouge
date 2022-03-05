@@ -78,7 +78,7 @@
             <div id="galerie">
                     <h3>Nos produits</h3>
                     <div class="galerie">
-                        <a href="labradorite.html"><img src="../filrouge/images/labradorite.gif"></a>
+                        <a href="labradorite.php"><img src="../filrouge/images/labradorite.gif"></a>
                         <a href="pierredelune.gif"><img src="../filrouge/images/pierredelune.gif"></a>
                         <a href="amethyste.gif"><img src="../filrouge/images/amethyste.gif"></a>
                         <a href="citrine.gif"><img src="../filrouge/images/citrine.gif"></a>

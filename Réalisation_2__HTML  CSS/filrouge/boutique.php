@@ -11,7 +11,7 @@
             <aside>
                 <nav class="liens">
                     <ul>
-                    <li class="liens"><a href="index.php">ACCUEIL</a></li>
+                        <li class="liens"><a href="index.php">ACCUEIL</a></li>
                         <li class="liens"><a href="boutique.php">BOUTIQUE</a></li>
                         <li class="liens"><a href="guide.php">GUIDE DES PIERRES</a></li>
                         <li class="liens"><a href="compte.php">MON COMPTE</a></li>

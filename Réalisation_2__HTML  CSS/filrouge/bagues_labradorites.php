@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8" />
         <title>Les cailloux de Zicaa</title>
-        <link rel="stylesheet" href="index.css">
+        <link rel="stylesheet" href="guide.css">
         <link rel="stylesheet" href="responsive_index.css" media="only screen and (max-width:800px)">
     </head>
     <body>

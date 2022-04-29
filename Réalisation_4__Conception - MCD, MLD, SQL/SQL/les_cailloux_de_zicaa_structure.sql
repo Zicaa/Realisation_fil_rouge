@@ -9,12 +9,8 @@ identifiant_utilisateur varchar(50)
 
 create table droits(
 id_droits int auto_increment primary key,
-id_utilisateur INT
+id_utilisateur int
 );
-
-alter table droits
-add constraint fk_id_utilisateur foreign key (id_utilisateur)
-references utilisateur(id_utilisateur);
 
 create table administrateur(
 id_admin int auto_increment primary key,
@@ -29,19 +25,17 @@ ville_admin varchar (50)
 
 create table client(
 id_client int auto_increment primary key,
-id_adresse_livraison int,
 nom_client varchar(50),
 prenom_client varchar(50),
-email_client varchar(50),
-telephone_client varchar(50),
 adresse_client varchar (50),
 CP_client int,
-ville_client varchar (50)
+ville_client varchar (50),
+telephone_client varchar(50),
+email_client varchar(50),
+pseudo_client varchar(50),
+mdp_client varchar(100)
 );
 
-alter table client
-add constraint fk_client_id_adresse_livraison foreign key (id_adresse_livraison)
-references client(id_client);
 
 create table livraison(
 id_client int auto_increment primary key,
@@ -64,10 +58,6 @@ CP_fournisseur int,
 ville_fournisseur varchar (50)
 );
 
-alter table fournisseur
-add constraint fk_fournisseur_id_admin foreign key (id_admin)
-references fournisseur(id_fournisseur);
-
 create table formulaire(
 id_formulaire int auto_increment primary key,
 id_client varchar(50),
@@ -78,10 +68,6 @@ demande text,
 id_admin int not null
 );
 
-alter table formulaire
-add constraint fk_formulaire_id_admin foreign key (id_admin)
-references formulaire(id_formulaire);
-
 create table produit(
 id_produit int auto_increment primary key,
 nom_produit varchar(50),
@@ -89,10 +75,6 @@ type_produit varchar(50),
 prix_produit int,
 id_admin int
 );
-
-alter table produit
-add constraint fk_produit_id_admin foreign key (id_admin)
-references produit(id_produit);
 
 create table categorie(
 id_categorie int auto_increment primary key
@@ -103,7 +85,7 @@ id_image int auto_increment primary key
 );
 
 create table stocks(
-id_stocks int auto_increment primary key,
+id_stock int auto_increment primary key,
 id_produit int,
 nom_produit varchar(50),
 type_produit varchar(50),
@@ -112,12 +94,8 @@ quantite_produit int,
 id_admin int
 );
 
-alter table stocks
-add constraint fk_stocks_id_admin foreign key (id_admin)
-references stocks(id_stocks);
-
-create table avantages(
-id_avantages int auto_increment primary key,
+create table avantage(
+id_avantage int auto_increment primary key,
 id_client int,
 id_promotion int,
 montant_promotion int,
@@ -131,10 +109,6 @@ montant_promotion int,
 prix_final int,
 id_admin int
 );
-
-alter table promotion
-add constraint fk_promotion_id_admin foreign key (id_admin)
-references promotion(id_promotion);
 
 create table commande(
 id_commande int auto_increment primary key,
@@ -159,55 +133,127 @@ paiement_paypal varchar (50)
 
 create table contacter(
 id_client int,
-   id_formulaire INT,
-   PRIMARY KEY(id_client, id_formulaire)
+id_formulaire int
 );
 
-create table bénéficier(
+create table beneficier(
 id_client int,
-   id_avantage INT,
-   id_promotion INT,
-   PRIMARY KEY(id_client, id_avantage, id_promotion)
+id_avantage int,
+id_promotion int
 );
 
 create table stocker(
 id_produit int,
-   id_stock INT,
-   PRIMARY KEY(id_produit, id_stock)
+id_stock int
 );
 
 create table acheter(
 id_client int,
-   id_produit INT,
-   PRIMARY KEY(id_client, id_produit)
+id_produit int
 );
 
 create table fournir(
 id_fournisseur int,
-   id_produit INT,
-   PRIMARY KEY(id_fournisseur, id_produit)
+id_produit int
 );
 
 create table editer(
 id_admin int,
-   id_commande INT,
-   id_client INT,
-   id_produit INT,
-   PRIMARY KEY(id_admin, id_commande, id_client, id_produit)
+id_commande int,
+id_client int,
+id_produit int
 );
 
 create table regler(
 id_paiement int,
-   id_commande INT,
-   id_client INT,
-   id_produit INT,
-   PRIMARY KEY(id_paiement, id_commande, id_client, id_produit)
+id_commande int,
+id_client int,
+id_produit int
 );
 
 create table avoir(
 id_produit int,
-   id_categorie INT,
-   id_image INT,
-   PRIMARY KEY(id_produit, id_categorie, id_image)
+id_categorie int,
+id_image int
 );
+
+alter table contacter
+add constraint fk_contacter_client foreign key (id_client) 
+references client(id_client);
+
+alter table contacter
+add constraint fk_contacter_formulaire foreign key (id_formulaire) 
+references formulaire(id_formulaire);
+
+alter table beneficier
+add constraint fk_beneficier_client foreign key (id_client) 
+references client(id_client);
+
+alter table beneficier
+add constraint fk_beneficier_avantage foreign key (id_avantage) 
+references avantage(id_avantage);
+
+alter table beneficier
+add constraint fk_beneficier_promotion foreign key (id_promotion) 
+references promotion(id_promotion);
+
+alter table stocker
+add constraint fk_stocker_produit foreign key (id_produit) 
+references produit(id_produit);
+
+alter table stocker
+add constraint fk_stocker_stocks foreign key (id_stock) 
+references stocks(id_stock);
+
+alter table acheter
+add constraint fk_acheter_client foreign key (id_client) 
+references client(id_client);
+
+alter table acheter
+add constraint fk_acheter_produit foreign key (id_produit) 
+references produit(id_produit);
+
+alter table fournir
+add constraint fk_fournir_fournisseur foreign key (id_fournisseur) 
+references fournisseur(id_fournisseur);
+
+alter table fournir
+add constraint fk_fournir_produit foreign key (id_produit) 
+references produit(id_produit);
+
+alter table avoir
+add constraint fk_avoir_produit foreign key (id_produit) 
+references produit(id_produit);
+
+alter table avoir
+add constraint fk_avoir_categorie foreign key (id_categorie) 
+references categorie(id_categorie);
+
+alter table avoir
+add constraint fk_avoir_image foreign key (id_image) 
+references image(id_image);
+
+alter table regler
+add constraint fk_regler_commande foreign key (id_commande) 
+references commande(id_commande);
+
+alter table regler
+add constraint fk_regler_client foreign key (id_client) 
+references client(id_client);
+
+alter table regler
+add constraint fk_regler_produit foreign key (id_produit) 
+references produit(id_produit);
+
+alter table editer
+add constraint fk_editer_commande foreign key (id_commande) 
+references commande(id_commande);
+
+alter table editer
+add constraint fk_editer_client foreign key (id_client) 
+references client(id_client);
+
+alter table editer
+add constraint fk_editer_produit foreign key (id_produit) 
+references produit(id_produit);
 

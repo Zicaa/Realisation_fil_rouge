@@ -18,11 +18,12 @@ insert into client (id_client, nom_client, prenom_client, adresse_client, CP_cli
 (null,"ROUX", "Ludovic","80 rue Riquet","31000","TOULOUSE","0700000011", "ludoroux@hotmail.fr", "LUDROU", MD5('motdepasseahash')),
 (null,"DAVID", "Tatiana", "18 rue Marquise","34000","MONTPELLIER", "0600000011", "david@hotmail.fr", "TATIAD", MD5('motdepasseahash')),
 (null,"DUPUY", "Laurence","27 rue de la Gare","31000","TOULOUSE","0700000012", "dupuylaurence@gmail.com", "LAUDUP", MD5('motdepasseahash')),
-(null,"CRES", "Nausicaa", "18 rue delarueinvente","34000","MONTPELLIER", "0600000015", "naucre@hotmail.fr", "NAUCRE", MD5('motdepasseahash'));
+(null,"CRES", "Nausicaa", "18 rue delarueinvente","34000","MONTPELLIER", "0600000015", "naucre@hotmail.fr", "NAUCRE", MD5('motdepasseahash')),
+(null,"DUPONT", "Martin", "15 rue duclient","34000","MONTPELLIER", "0600000015", "naucre@hotmail.fr", "NAUCRE", MD5('motdepasseahash'));
 
-insert into commande (id_commande, id_client, id_produit, nom_client, prenom_client, adresse_client, CP_client, ville_client, montant_commande, quantite_produit, prix_final) values
-(null,"2", "12", "dupont", "martin","15 rue duclient","34000","montpellier","15","1","20"),
-(null,"2", "12", "dupont", "martin","15 rue duclient","34000","montpellier","15","1","20");
+insert into commande (id_commande, id_client, id_produit, numero_commande, nom_client, prenom_client, adresse_client, CP_client, ville_client, montant_commande, quantite_produit, prix_final) values
+(null, "2", "12", "01","DUPONT", "martin","15 rue duclient","34000","MONTPELLIER","15","1","20"),
+(null, "2", "12", "02", "DUPONT", "martin","15 rue duclient","34000","MONTPELLIER","15","1","20");
 
 insert into droits (id_droits, id_utilisateur) values
 (null, "2");

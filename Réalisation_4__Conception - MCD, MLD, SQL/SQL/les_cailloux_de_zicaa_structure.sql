@@ -257,3 +257,32 @@ alter table editer
 add constraint fk_editer_produit foreign key (id_produit) 
 references produit(id_produit);
 
+SELECT nom_client, prenom_client FROM client;
+  
+SELECT nom_client, prenom_client, 
+adresse_client, CP_client, ville_client
+FROM client
+WHERE ville_client = "TOULOUSE";
+
+SELECT nom_client, prenom_client,
+adresse_client, CP_client, ville_client
+FROM client
+WHERE ville_client = "TOULOUSE" 
+AND CP_client = "31200";
+
+SELECT *
+FROM `commande`
+WHERE `nom_client` = (
+    SELECT "DUPONT"
+    FROM `client`
+    LIMIT 1
+  );
+  
+SELECT *
+FROM `commande`
+WHERE `nom_client` IN (
+    SELECT `nom_client`
+    FROM `client`
+    WHERE `prix_final` = "20"
+  );
+

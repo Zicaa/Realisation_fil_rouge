@@ -9,7 +9,7 @@ function slideSuivante(){
     items[compteur].classList.remove("active");
 
     if(compteur < nbSlide-1){
-        console.log(compteur++);
+        compteur++;
     }else{
         compteur = 0;
     }

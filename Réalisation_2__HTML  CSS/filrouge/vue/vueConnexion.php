@@ -4,7 +4,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Connexion</title>
-    <link rel="stylesheet" href="..\formulaire_inscription.css">
+    <link rel="stylesheet" href="formulaire_inscription.css">
 </head>
     <body>
         <main>
@@ -18,7 +18,7 @@
                                 <input type ="password" name="password" class="form-control" placeholder="Mot de passe" required="required" autocomplete="off">
                             </div>
                             <div class="form-group">
-                                <button type ="submit"><a href="vueConnexion.php">Connexion</button>
+                                <button type ="submit" value=connexion>Connexion</button>
                             </div>
                     </form>
                 <button type ="submit"><a href="vueInscription.php">Inscription</a></button>

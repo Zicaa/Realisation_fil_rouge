@@ -33,6 +33,7 @@ ville_client varchar (50),
 telephone_client varchar(50),
 email_client varchar(50),
 pseudo_client varchar(50),
+mdp_client_hash varchar(100),
 mdp_client varchar(100)
 );
 

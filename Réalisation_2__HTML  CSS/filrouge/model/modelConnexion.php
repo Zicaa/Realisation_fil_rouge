@@ -10,7 +10,7 @@ try{
     // Je parcours les données de ma table client dont je fais la requête
     while($data = $query->fetch()){
         // Si les données de ma base de données correspondent à celles tapées (Login et Mdp)
-        if($data['pseudo_client'] == $pseudo && $data['mdp_client'] == $mdp){
+        if($data['pseudo_client'] == $pseudo && $data['mdp_client'] == MD5('motdepasseahash')){
             // Ma variable $compare passe à "true"
             $compare = true;
         } 

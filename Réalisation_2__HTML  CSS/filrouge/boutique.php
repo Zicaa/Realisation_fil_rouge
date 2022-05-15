@@ -42,9 +42,9 @@
             </div>
         </div>
         <div id="boutique">
-            <div id="bagues">
+            <div id="produit">
                 <h2>Nos bagues</h2>
-                    <div class="bagues">
+                    <div class="produit">
                         <a href="../filrouge/bagues_labradorites.html"><img src="../filrouge/Images/bague_labradorite4.gif"></a>
                         <p>Bagues en labradorite</p>
                         <a href="pierredelune.gif"><img src="../filrouge/images/pierredelune.gif"></a>
@@ -57,9 +57,9 @@
                         <p>Bagues en cornaline</p>
                     </div>
                 </div>
-           <div id="bagues">
+           <div id="produit">
                 <h2>Nos bracelets</h2>
-                    <div class="bagues">
+                    <div class="produit">
                         <a href="../filrouge/bagues_labradorites.html"><img src="../filrouge/Images/bracelet_labradorite4.gif"></a>
                         <p>Bracelets en labradorite</p>
                         <a href="pierredelune.gif"><img src="../filrouge/images/pierredelune.gif"></a>
@@ -72,9 +72,9 @@
                         <p>Bracelets en cornaline</p>
                     </div>
                 </div>
-            <div id="bagues">
+            <div id="produit">
                 <h2>Nos colliers</h2>
-                    <div class="bagues">
+                    <div class="produit">
                         <a href="../Fil_rouge/bagues_labradorites.html"><img src="../filrouge/Images/collier_labradorite4.gif"></a>
                         <p>Colliers en labradorite</p>
                         <a href="pierredelune.gif"><img src="../filrouge/images/pierredelune.gif"></a>

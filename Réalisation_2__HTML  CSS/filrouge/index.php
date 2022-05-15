@@ -65,23 +65,18 @@
                 <article>
                     <h1>NOTRE LIEN AVEC LA NATURE</h1>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec erat iaculis, tincidunt massa at, 
+                        <strong>Lorem ipsum dolor sit amet</strong>, consectetur adipiscing elit. Nulla nec erat iaculis, tincidunt massa at, 
                         efficitur orci. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis 
                         egestas. Praesent consequat tincidunt nibh ut ultricies. Cras rutrum elit diam, sed mollis turpis tempus a. 
                         Nulla sapien metus, lacinia quis sapien id, sodales blandit diam. Vivamus ornare lorem quis dolor cursus pulvinar. 
                         Mauris vestibulum eget urna eu blandit. Nam semper varius sem, nec porta libero venenatis quis. 
                         Aliquam auctor mi a luctus laoreet. Nulla facilisi. Duis convallis orci vel molestie sollicitudin. 
-                        In sed sollicitudin eros. Vestibulum vitae semper orci, ut luctus magna.
+                        In sed sollicitudin eros. <strong>Vestibulum vitae</strong>semper orci, ut luctus magna.
                         Curabitur ultricies, tortor a accumsan fringilla, nunc urna facilisis mauris, non pharetra justo 
                         lectus malesuada felis. Suspendisse potenti. In commodo lacus vestibulum orci accumsan ultricies eu ut eros. 
                         Praesent laoreet leo ut lorem semper tempor. Nunc sed tincidunt nisi. Aliquam leo eros, viverra tincidunt congue 
-                        id, auctor ut nisi. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; 
+                        id, auctor ut nisi. <strong>Vestibulum ante ipsum</strong>primis in faucibus orci luctus et ultrices posuere cubilia curae; 
                         Praesent in orci a metus consequat iaculis. Sed accumsan dui sapien, ac vestibulum est vestibulum tincidunt. 
-                        Etiam lectus turpis, facilisis ut fringilla faucibus, dictum nec nisi. 
-                        Vestibulum scelerisque erat id mauris malesuada sodales et eu sapien. 
-                        Mauris rhoncus justo vitae tortor fringilla, at convallis justo ultrices. Pellentesque venenatis tempus dui ut faucibus. 
-                        Sed gravida vulputate lorem, vitae vestibulum lorem dignissim quis. Sed quam erat, commodo vitae mi vitae, 
-                        feugiat consequat elit. Praesent varius ut mi vel pellentesque.
                     </p>
             </article>
         </section>

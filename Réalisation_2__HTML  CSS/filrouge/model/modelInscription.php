@@ -1,6 +1,5 @@
 <?php
 try {
-    // Jé réalise une requête préparée qui va récupérer les données du formulaire et les insérer dans ma table CLIENT
     $query = $database->prepare("INSERT INTO client SET
         nom_client = :nom_client,
         prenom_client = :prenom_client,
@@ -26,14 +25,12 @@ try {
         'mdp_client' => MD5('motdepasseahash')
     ));
 
-    // Si l'exécution de la requête a lieu, un message s'affiche en js
     if ($execution){
-        echo "<script type='text/javascript'>alert('Votre compte a bien été créé');</script>";
-        // Puis je renvoie à la page du compte
-    }   header('Location: ../controler/controlerCompte.php');
-
-    // Si la requête échoue, un message d'erreur s'affiche
+        echo "<script type='text/javascript'>alert('Votre compte a bien été créé.');</script>";
+        echo "<script type='text/javascript'>window.location.replace('../controler/controlerCompte.php');</script>";
+    }
     } catch (EXCEPTION $e) {
-        die("Votre compte n'a pas pu être créé.");
+        die("<script type='text/javascript'>alert('Erreur de saisie, veuillez retaper le formulaire.');</script>
+            <script type='text/javascript'>window.location.replace('../vue/vueInscription.php');</script>");
 }
 ?>

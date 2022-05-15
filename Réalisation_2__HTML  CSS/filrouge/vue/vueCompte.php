@@ -73,7 +73,7 @@
         <ul>
             <li><img src="../images/Logo.svg" id="logo" alt="logo"></li>
             <li><a href="../controler/controlerCompte.php"><input type="submit" value="Mon compte"></a></li>
-            <li><a href="../controler/controlerConnexion.php"><input type="submit" value="Se déconnecter"></a></li>
+            <li><a href="../vue/vueConnexion.php"><input type="submit" value="Se déconnecter"></a></li>
         </ul>
     </nav>
 </body>

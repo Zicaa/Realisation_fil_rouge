@@ -53,7 +53,8 @@ function showFilter()
                 // J'intègre dans mon paragraphe du texte en h3 avec les données : nom, surface, url et CP du département
                 zone.innerHTML += "<section><h3>Nom : " + data.records[i].fields.nom_site + "</h3>" +
                 "<p>Surface : " + data.records[i].fields.surface + " km²" + "</p>" +
-                "<p>Url de la fiche : " + "<a href =" + url2 + "target=_blank>" + data.records[i].fields.url_fiche + "</a></p>" + "<p>Code du département : " + data.records[i].fields.code_dep + "</p></section>";             
+                "<p>Url de la fiche : " + "<a href =" + url2 + ">" + data.records[i].fields.url_fiche + "</a></p>" +
+                "<p>Code du département : " + data.records[i].fields.code_dep + "</p></section>";             
             } 
         }
     });document.getElementById('input').value = showFilter;

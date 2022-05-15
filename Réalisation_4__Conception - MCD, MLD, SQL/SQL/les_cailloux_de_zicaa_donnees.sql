@@ -2,7 +2,7 @@ use les_cailloux_de_zicaa;
 insert into administrateur (id_admin, nom_admin, prenom_admin, email_admin, adresse_admin, CP_admin, ville_admin) values
 (null,"cresta", "zicaa","zikaha@hotmail.fr","16 rue condorcet","34110","frontignan");
 
-insert into client (id_client, nom_client, prenom_client, adresse_client, CP_client, ville_client, telephone_client, email_client, pseudo_client, mdp_client) values
+insert into client (id_client, nom_client, prenom_client, adresse_client, CP_client, ville_client, telephone_client, email_client, pseudo_client, mdp_client_hash) values
 (null,"DUFORT", "Gautier","37 rue de la Camargaise","34000","MONTPELLIER","0700000026", "dufort-gau@hotmail.fr", "GAUDUF", MD5('motdepasseahash')),
 (null,"DUPOND", "Tara", "18 rue delarueinvente","34000","MONTPELLIER", "0600000003", "tara@hotmail.fr", "TARDUP",MD5('motdepasseahash')),
 (null,"GERARD", "Bertrand","20 rue de la Colombette","31200","TOULOUSE","0700000002", "gerard-ber@gmail.com", "BERGER", MD5('motdepasseahash')),

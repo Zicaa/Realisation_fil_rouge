@@ -104,6 +104,15 @@ img{
     border-radius: 20px;
 }
 
+#galerie{
+    background-color: #f05d23;
+    border-radius: 10px;
+    margin: 10px;
+    height: 30px;
+    grid-column: 3;
+    grid-row: 3;
+}
+
 .galerie{
     padding: 0;
     flex-direction: column;

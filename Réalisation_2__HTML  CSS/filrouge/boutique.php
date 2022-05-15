@@ -27,14 +27,14 @@
             </aside>
         <div class ="container">
             <div class="carrousel">
-                <img class="img" class="active" src="Images/carrousel/im1.jpg">
-                <img class="img" src = "Images/carrousel/im2.jpg">
-                <img class="img" src = "Images/carrousel/im3.jpg">
-                <img class="img" src = "Images/carrousel/im4.jpg">
-                <img class="img" src = "Images/carrousel/im5.jpg">
-                <img class="img" src = "Images/carrousel/im6.jpg">
-                <img class="img" src = "Images/carrousel/im7.jpg">
-                <img class="img" src = "Images/carrousel/im8.jpg">
+                <img class="img active" src="Images/carrousel/im1.jpg"></img>
+                <img class="img" src = "Images/carrousel/im2.jpg"></img>
+                <img class="img" src = "Images/carrousel/im3.jpg"></img>
+                <img class="img" src = "Images/carrousel/im4.jpg"></img>
+                <img class="img" src = "Images/carrousel/im5.jpg"></img>
+                <img class="img" src = "Images/carrousel/im6.jpg"></img>
+                <img class="img" src = "Images/carrousel/im7.jpg"></img>
+                <img class="img" src = "Images/carrousel/im8.jpg"></img>
             </div>
             <div class="cont-btn">
                 <div class="btn-nav left">↞</div>

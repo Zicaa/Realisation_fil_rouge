@@ -34,18 +34,41 @@
         }
 
         input{
-            width: 100%;
-            margin: 8px 0;
-            padding: 10px;
+            display: inline-block;
+            background-color: lightslategray;
             border-radius: 10px;
-            background-color: #645244;
-            color: white;
+            border: 4px double whitesmoke;
+            color: whitesmoke;
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+            padding: 10px;
+            width: 200px;
+            -webkit-transition: all 0.5s;
+            -moz-transition: all 0.5s;
+            -o-transition: all 0.5s;
+            transition: all 0.5s;
             cursor: pointer;
+            margin: 5px;
         }
 
         input:hover{
-            background-color: #F05D23; 
-            color: white;
+            display: inline-block;
+            background-color: lightgrey;
+            border-radius: 10px;
+            border: 4px double lightslategray;
+            color: lightslategray;
+            text-align: center;
+            font-size: 20px;
+            font-weight: bold;
+            padding: 10px;
+            width: 200px;
+            -webkit-transition: all 0.5s;
+            -moz-transition: all 0.5s;
+            -o-transition: all 0.5s;
+            transition: all 0.5s;
+            cursor: pointer;
+            margin: 5px;
         }
 
         div{

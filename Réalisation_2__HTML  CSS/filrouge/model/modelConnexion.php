@@ -1,32 +1,26 @@
 <?php
+ try {
 
-// J'initialise une requête préparée qui va sélectionner les données de ma table CLIENT
-try{
-    $query = $database->prepare('SELECT * FROM client');
+    $query = $database->prepare("SELECT * FROM client WHERE
+        pseudo_client = :pseudo_client"
+    ); 
+    
+    $execution = $query->execute(array(
+        'pseudo_client' => $pseudo,
+    ));
 
-    // Je déclare la variable $compare à "false" par défaut
-    $compare = false;
-
-    // Je parcours les données de ma table client dont je fais la requête
-    while($data = $query->fetch()){
-        // Si les données de ma base de données correspondent à celles tapées (Login et Mdp)
-        if($data['pseudo_client'] == $pseudo && $data['mdp_client'] == MD5('motdepasseahash')){
-            // Ma variable $compare passe à "true"
-            $compare === true;
-        } 
+    if ($execution){
+        $user=$query->fetch();
+        if (password_verify($mdp, $user['mdp_client'])){
+            echo "<script type='text/javascript'>window.location.replace('../controler/controlerCompte.php');</script>";
+        }else{
+            echo "<script type='text/javascript'>alert('Erreur de saisie, veuillez retaper le formulaire.');</script>";
+            echo "<script type='text/javascript'>window.location.replace('../vue/vueConnexion.php');</script>";
+        }
+    
     }
-
-    // Si ma variable $compare est égale à "true", je renvoie à la page du compte
-    if($compare === true){
-        header('Location: ../controler/controlerCompte.php');
-    // Sinon un message d'erreur s'affiche "Pseudo ou mot de passe incorrect"
-    } else {
-        echo "<script type='text/javascript'>alert('Pseudo ou mot de passe incorrect');</script>";
-    }
-
-// Si la requête échoue, une page d'erreur est affichée
-} catch(EXCEPTION $e){
-            die('Erreur : ' .$e->getMessage());
+    } catch (EXCEPTION $e) {
+        die("erreur de connexion");
 }
 
 ?>

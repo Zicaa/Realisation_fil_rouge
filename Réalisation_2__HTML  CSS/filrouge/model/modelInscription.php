@@ -22,7 +22,7 @@ try {
         'telephone_client' => $tel, 
         'email_client' => $email, 
         'pseudo_client' => $pseudo, 
-        'mdp_client' => MD5('motdepasseahash')
+        'mdp_client' => password_hash($mdp,PASSWORD_DEFAULT),
     ));
 
     if ($execution){

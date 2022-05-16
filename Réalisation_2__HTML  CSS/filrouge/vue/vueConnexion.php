@@ -9,19 +9,19 @@
     <body>
         <main>
             <div class="login-form">
-                    <form action="..\controler\controlerCompte.php" method="post">
+                    <form action="../controler/controlerConnexion.php" method="post">
                         <h1>Connexion</h1>
                             <div class="form-group">
-                                <input type ="text" name="pseudo" class="form-control" placeholder="pseudo" required="required" autocomplete="off">
+                                <input type ="text" name="pseudo" class="form-control" placeholder="Pseudo" required="required" autocomplete="off">
                             </div>
                             <div class="form-group">
-                                <input type ="password" name="password" class="form-control" placeholder="Mot de passe" required="required" autocomplete="off">
+                                <input type ="password" name="mdp" class="form-control" placeholder="Mot de passe" required="required" autocomplete="off">
                             </div>
                             <div class="form-group">
                                 <button type ="submit" value=connexion>Connexion</button>
                             </div>
                     </form>
-                <button type ="submit"><a href="vueInscription.php">Inscription</a></button>
+                <button type ="button"><a href="vueInscription.php">Inscription</a></button>
             </div>
         </main>
     </body>

@@ -2,24 +2,24 @@ use les_cailloux_de_zicaa;
 insert into administrateur (id_admin, nom_admin, prenom_admin, email_admin, adresse_admin, CP_admin, ville_admin) values
 (null,"cresta", "zicaa","zikaha@hotmail.fr","16 rue condorcet","34110","frontignan");
 
-insert into client (id_client, nom_client, prenom_client, adresse_client, CP_client, ville_client, telephone_client, email_client, pseudo_client, mdp_client_hash) values
-(null,"DUFORT", "Gautier","37 rue de la Camargaise","34000","MONTPELLIER","0700000026", "dufort-gau@hotmail.fr", "GAUDUF", MD5('motdepasseahash')),
-(null,"DUPOND", "Tara", "18 rue delarueinvente","34000","MONTPELLIER", "0600000003", "tara@hotmail.fr", "TARDUP",MD5('motdepasseahash')),
-(null,"GERARD", "Bertrand","20 rue de la Colombette","31200","TOULOUSE","0700000002", "gerard-ber@gmail.com", "BERGER", MD5('motdepasseahash')),
-(null,"MARTIN", "Nicolas", "18 rue du Thaur","31000","TOULOUSE", "0600000007", "nico@hotmail.fr", "NIMART", MD5('motdepasseahash')),
-(null,"BERNARD", "Léo","17 rue Comédie","34000","MONTPELLIER","0700000005", "leobernard@gmail.com", "LEOBER", MD5('motdepasseahash')),
-(null,"PETIT", "Marc", "18 rue Chalançon","34000","MONTPELLIER", "0600000006", "marc.petit@gmail.com", "MARPET", MD5('motdepasseahash')),
-(null,"ROBERT", "Jennyfer","17 rue de la Gare","31000","TOULOUSE","0700000006", "jenny.robert@hotmail.fr", "JENROB", MD5('motdepasseahash')),
-(null,"RICHARD", "Carine", "88 rue delarueinvente","34000","MONTPELLIER", "0600000009", "carine@hotmail.fr", "CARRIC", MD5('motdepasseahash')),
-(null,"DURAND", "Laura","25 rue de la Gare","31000","TOULOUSE","0700000003", "laura-durand@hotmail.fr", "LAUDUR", MD5('motdepasseahash')),
-(null,"DUBOIS", "Paul", "25 rue Roquelaine","34000","MONTPELLIER", "0600000008", "paul@hotmail.fr", "PAUDUB", MD5('motdepasseahash')),
-(null,"SIMON", "Olivier","35 rue Marquier","31000","TOULOUSE","0700000010", "oliviersimon@hotmail.fr", "OLISIM", MD5('motdepasseahash')),
-(null,"BONNET", "Maxime", "18 rue Fosch","34000","MONTPELLIER", "0600000010", "max@hotmail.fr", "MAXBON", MD5('motdepasseahash')),
-(null,"ROUX", "Ludovic","80 rue Riquet","31000","TOULOUSE","0700000011", "ludoroux@hotmail.fr", "LUDROU", MD5('motdepasseahash')),
-(null,"DAVID", "Tatiana", "18 rue Marquise","34000","MONTPELLIER", "0600000011", "david@hotmail.fr", "TATIAD", MD5('motdepasseahash')),
-(null,"DUPUY", "Laurence","27 rue de la Gare","31000","TOULOUSE","0700000012", "dupuylaurence@gmail.com", "LAUDUP", MD5('motdepasseahash')),
-(null,"CRES", "Nausicaa", "18 rue delarueinvente","34000","MONTPELLIER", "0600000015", "naucre@hotmail.fr", "NAUCRE", MD5('motdepasseahash')),
-(null,"DUPONT", "Martin", "15 rue duclient","34000","MONTPELLIER", "0600000015", "naucre@hotmail.fr", "NAUCRE", MD5('motdepasseahash'));
+insert into client (id_client, nom_client, prenom_client, adresse_client, CP_client, ville_client, telephone_client, email_client, pseudo_client, mdp_client) values
+(null,"DUFORT", "Gautier","37 rue de la Camargaise","34000","MONTPELLIER","0700000026", "dufort-gau@hotmail.fr", "GAUDUF", ""),
+(null,"DUPOND", "Tara", "18 rue delarueinvente","34000","MONTPELLIER", "0600000003", "tara@hotmail.fr", "TARDUP", ""),
+(null,"GERARD", "Bertrand","20 rue de la Colombette","31200","TOULOUSE","0700000002", "gerard-ber@gmail.com", "BERGER", ""),
+(null,"MARTIN", "Nicolas", "18 rue du Thaur","31000","TOULOUSE", "0600000007", "nico@hotmail.fr", "NIMART", ""),
+(null,"BERNARD", "Léo","17 rue Comédie","34000","MONTPELLIER","0700000005", "leobernard@gmail.com", "LEOBER", ""),
+(null,"PETIT", "Marc", "18 rue Chalançon","34000","MONTPELLIER", "0600000006", "marc.petit@gmail.com", "MARPET", ""),
+(null,"ROBERT", "Jennyfer","17 rue de la Gare","31000","TOULOUSE","0700000006", "jenny.robert@hotmail.fr", "JENROB", ""),
+(null,"RICHARD", "Carine", "88 rue delarueinvente","34000","MONTPELLIER", "0600000009", "carine@hotmail.fr", "CARRIC", ""),
+(null,"DURAND", "Laura","25 rue de la Gare","31000","TOULOUSE","0700000003", "laura-durand@hotmail.fr", "LAUDUR", ""),
+(null,"DUBOIS", "Paul", "25 rue Roquelaine","34000","MONTPELLIER", "0600000008", "paul@hotmail.fr", "PAUDUB", ""),
+(null,"SIMON", "Olivier","35 rue Marquier","31000","TOULOUSE","0700000010", "oliviersimon@hotmail.fr", "OLISIM", ""),
+(null,"BONNET", "Maxime", "18 rue Fosch","34000","MONTPELLIER", "0600000010", "max@hotmail.fr", "MAXBON", ""),
+(null,"ROUX", "Ludovic","80 rue Riquet","31000","TOULOUSE","0700000011", "ludoroux@hotmail.fr", "LUDROU", ""),
+(null,"DAVID", "Tatiana", "18 rue Marquise","34000","MONTPELLIER", "0600000011", "david@hotmail.fr", "TATIAD", ""),
+(null,"DUPUY", "Laurence","27 rue de la Gare","31000","TOULOUSE","0700000012", "dupuylaurence@gmail.com", "LAUDUP", ""),
+(null,"CRES", "Nausicaa", "18 rue delarueinvente","34000","MONTPELLIER", "0600000015", "naucre@hotmail.fr", "NAUCRE", ""),
+(null,"DUPONT", "Martin", "15 rue duclient","34000","MONTPELLIER", "0600000015", "dupmar@hotmail.fr", "DUPMAR", "");
 
 insert into commande (id_commande, id_client, id_produit, numero_commande, nom_client, prenom_client, adresse_client, CP_client, ville_client, montant_commande, quantite_produit, prix_final) values
 (null, "2", "12", "01","DUPONT", "martin","15 rue duclient","34000","MONTPELLIER","15","1","20"),

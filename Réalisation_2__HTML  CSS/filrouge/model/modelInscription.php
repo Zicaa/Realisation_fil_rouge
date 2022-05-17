@@ -26,9 +26,9 @@ try {
     ));
 
     if ($execution){
-        echo "<script type='text/javascript'>alert('Votre compte a bien été créé.');</script>";
         echo "<script type='text/javascript'>window.location.replace('../controler/controlerCompte.php');</script>";
     }
+
     } catch (EXCEPTION $e) {
         die("<script type='text/javascript'>alert('Erreur de saisie, veuillez retaper le formulaire.');</script>
             <script type='text/javascript'>window.location.replace('../vue/vueInscription.php');</script>");

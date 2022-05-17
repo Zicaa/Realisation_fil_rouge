@@ -12,7 +12,9 @@
         body{
             display: grid;
             grid-template-columns: repeat(1fr, 1fr, 1fr);
+            background-color: lightgrey;
         }
+
 
         nav{
             top: 0;
@@ -23,6 +25,16 @@
             display: flex;
             flex-direction: row;
         }
+
+        h1 { color: #f05d23;
+            font-family: "Great Vibes" cursive; 
+            font-size: 80px;
+            line-height: 160px;
+            font-weight: normal;
+            margin-bottom: 0px;
+            margin-top: 40px;
+            text-align: center;
+            text-shadow: 0 1px 1px #fff; }
 
         ul{
             position: absolute;
@@ -92,6 +104,7 @@
     </style>
 </head>
 <body>
+    <h1 id="bienvenue">Bienvenue cher client</h1>
     <nav>
         <ul>
             <li><img src="../images/Logo.svg" id="logo" alt="logo"></li>
@@ -99,5 +112,6 @@
             <li><a href="../vue/vueConnexion.php"><input type="submit" value="Se déconnecter"></a></li>
         </ul>
     </nav>
+    <div><img src ="../images/amethyst.png" alt="img"/></div>
 </body>
 </html>

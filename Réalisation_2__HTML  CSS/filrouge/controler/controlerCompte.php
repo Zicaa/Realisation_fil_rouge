@@ -7,6 +7,6 @@
     require '../config/connectDatabase.php';
 
     // display stocks
-    require '../model/modelCompte.php'
+    require '../model/modelCompte.php';
     
 ?>

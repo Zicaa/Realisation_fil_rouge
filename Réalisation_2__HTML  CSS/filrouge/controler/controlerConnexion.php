@@ -1,12 +1,12 @@
 <?php
 
-// Je récupère la vue de mon formulaire d'inscription
+// Je récupère la vue de mon formulaire de connexion
 require '../vue/vueConnexion.php';
 
 // Je me connecte à la bdd
 require '../config/connectDatabase.php';
 
-    // Je récupère les champs renseignés dans mon formulaire d'inscription
+    // Je récupère les champs renseignés dans mon formulaire de connexion
     if(isset($_POST['pseudo'])
     && isset($_POST['mdp']));
     

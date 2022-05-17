@@ -1,12 +1,12 @@
 <?php
 
-    // ajout de la vue
+    // Je récupère la vue de mon formulaire d'inscription
     require '../vue/vueCompte.php';
 
-    // connexion à la bdd
+    // Je me connecte à la bdd
     require '../config/connectDatabase.php';
 
-    // encodage modèle
+    // Je mets en relation les données de la vue à mon modèle pour l'exécution de la requête préparée
     require '../model/modelCompteCreate.php';
     
 ?>

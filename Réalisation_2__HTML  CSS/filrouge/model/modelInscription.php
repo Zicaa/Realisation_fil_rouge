@@ -26,7 +26,7 @@ try {
     ));
 
     if ($execution){
-        echo "<script type='text/javascript'>window.location.replace('../controler/controlerCompte.php');</script>";
+        echo "<script type='text/javascript'>window.location.replace('../controler/controlerCompteCreate.php');</script>";
     }
 
     } catch (EXCEPTION $e) {

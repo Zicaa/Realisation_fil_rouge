@@ -1,7 +1,7 @@
 <?php
 
 try {
-    $requete = $database->prepare("INSERT INTO client SET
+    $query = $database->prepare("INSERT INTO client SET
         nom_client = :nom_client,
         prenom_client = :prenom_client,
         adresse_client = :adresse_client,
@@ -13,7 +13,7 @@ try {
         mdp_client = :mdp_client"
     ); 
     
-    $execution = $requete->execute(array(
+    $execution = $query->execute(array(
         'nom_client' => $nom, 
         'prenom_client' => $prenom, 
         'adresse_client' => $adresse, 

@@ -2,16 +2,16 @@
 
 try {
 
-    $requete = $database->prepare("SELECT * FROM client WHERE
+    $query = $database->prepare("SELECT * FROM client WHERE
         pseudo_client = :pseudo_client"
     ); 
     
-    $execution = $requete->execute(array(
+    $execution = $query->execute(array(
         'pseudo_client' => $pseudo,
     ));
 
     if ($execution){
-        $user=$requete->fetch();
+        $user=$query->fetch();
         if (password_verify($mdp, $user['mdp_client'])){
 
             setcookie("username",$user['prenom_client']);

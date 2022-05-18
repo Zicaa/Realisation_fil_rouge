@@ -1,6 +1,6 @@
 <?php
+// je créé une requête préparée qui insère des données dans ma table client
 try {
-    // Jé réalise une requête préparée qui va récupérer les données du formulaire et les insérer dans ma table CLIENT
     $query = $database->prepare("INSERT INTO client SET
         nom_client = :nom_client,
         prenom_client = :prenom_client,
@@ -13,7 +13,7 @@ try {
         mdp_client = :mdp_client"
     ); 
     
-    // Je crée les nouvelles données de ma BDD en y insérant les champs de mon formulaire
+    // j'insère dans ma BDD les données récupérées dans les champs de mon formulaire
     $execution = $query->execute(array(
         'nom_client' => $nom, 
         'prenom_client' => $prenom, 
@@ -23,17 +23,17 @@ try {
         'telephone_client' => $tel, 
         'email_client' => $email, 
         'pseudo_client' => $pseudo, 
-        'mdp_client' => MD5('motdepasseahash')
+        'mdp_client' => password_hash($mdp,PASSWORD_DEFAULT),
     ));
 
-    // Si l'exécution de la requête a lieu, un message s'affiche en js
+    // si la requête est exécutée je renvoie l'utilisateur sur sa page de compte
     if ($execution){
-        echo "<script type='text/javascript'>alert('Votre compte a bien été créé');</script>";
-        // Puis je renvoie à la page du compte
-    }   header('Location: ../controler/controlerCompte.php');
-
-    // Si la requête échoue, un message d'erreur s'affiche
+        setcookie("username",$user['prenom_client']);
+        echo "<script type='text/javascript'>window.location.replace('../controler/controlerCompteCreate.php');</script>";
+    }
+    // si la requête échoue, un message d'erreur s'affiche et renvoie l'utilisateur sur le formulaire
     } catch (EXCEPTION $e) {
-        die("Votre compte n'a pas pu être créé.");
+        die("<script type='text/javascript'>alert('Erreur de saisie, veuillez retaper le formulaire.');</script>
+            <script type='text/javascript'>window.location.replace('../vue/vueInscription.php');</script>");
 }
 ?>

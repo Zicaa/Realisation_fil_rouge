@@ -161,8 +161,8 @@ img{
 
 #galerie{
     background-color: #f05d23;
-    border-radius: 20px;
-    margin: 20px;
+    border-radius: 10px;
+    margin: 10px;
     height: 30px;
     grid-column: 3;
     grid-row: 3;

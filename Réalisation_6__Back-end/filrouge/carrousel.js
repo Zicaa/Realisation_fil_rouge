@@ -1,4 +1,4 @@
-// Je récupère les différents éléments de la page
+// je récupère les différents éléments de la page
 const items = document.getElementsByClassName("img");
 const nbSlide = items.length;
 const suivant = document.querySelector(".right");
@@ -7,7 +7,7 @@ const precedent = document.querySelector(".left");
 // j'initialise un système de compteur d'image à zéro
 let compteur = 0;
 
-// Je crée une fonction qui incrémente chaque image de 1
+// je crée une fonction qui incrémente chaque image de 1
 function slideSuivante(){
     // je sélectionne la première image de mon tableau et lui enlève la classe active : elle disparait
     items[compteur].classList.remove("active");
@@ -27,7 +27,7 @@ function slideSuivante(){
 // j'ajoute un écouteur d'évènement qui déclenche la fonction au click
 suivant.addEventListener("click", slideSuivante)
 
-// Je crée ma fonction qui décrémente chaque image de 1
+// je crée ma fonction qui décrémente chaque image de 1
 function slidePrecedente(){
     // je sélectionne la première image de mon tableau et lui enlève la classe active : elle disparait
     items[compteur].classList.remove("active");

@@ -112,7 +112,7 @@ h1{
 }
 
 h2{
-    text-align:left;
+    text-align:center;
     font-family: Helvetica;
     font-weight: bold;
     font-size:x-large;
@@ -122,8 +122,7 @@ h2{
 }
 
 .container {
-    width: 800;
-    height: 400;
+    max-width: 800;
     margin: 0 auto;
     padding: 50px;
     grid-row: 3;
@@ -178,7 +177,7 @@ img.active {
     top:150px;
 }
 
-#bagues{
+#produit{
     background-color: whitesmoke;
     border-radius: 20px;
     margin: 20px;
@@ -187,13 +186,13 @@ img.active {
     grid-row: 4;
 }
 
-.bagues{
+.produit{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
 }
 
-.bagues img{
+.produit img{
     margin: 10px;
     border-radius: 20px;
 }

@@ -1,7 +1,7 @@
 <?php
-// je créé une requête préparée qui insère des données dans ma table client
+
 try {
-    $query = $database->prepare("INSERT INTO client SET
+    $requete = $database->prepare("INSERT INTO client SET
         nom_client = :nom_client,
         prenom_client = :prenom_client,
         adresse_client = :adresse_client,
@@ -13,8 +13,7 @@ try {
         mdp_client = :mdp_client"
     ); 
     
-    // j'insère dans ma BDD les données récupérées dans les champs de mon formulaire
-    $execution = $query->execute(array(
+    $execution = $requete->execute(array(
         'nom_client' => $nom, 
         'prenom_client' => $prenom, 
         'adresse_client' => $adresse, 
@@ -26,12 +25,11 @@ try {
         'mdp_client' => password_hash($mdp,PASSWORD_DEFAULT),
     ));
 
-    // si la requête est exécutée je renvoie l'utilisateur sur sa page de compte
     if ($execution){
         setcookie("username",$user['prenom_client']);
         echo "<script type='text/javascript'>window.location.replace('../controler/controlerCompteCreate.php');</script>";
     }
-    // si la requête échoue, un message d'erreur s'affiche et renvoie l'utilisateur sur le formulaire
+
     } catch (EXCEPTION $e) {
         die("<script type='text/javascript'>alert('Erreur de saisie, veuillez retaper le formulaire.');</script>
             <script type='text/javascript'>window.location.replace('../vue/vueInscription.php');</script>");

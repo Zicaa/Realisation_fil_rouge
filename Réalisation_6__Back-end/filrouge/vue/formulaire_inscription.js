@@ -1,9 +1,7 @@
 const pages = document.querySelectorAll(".page")
 const header = document.querySelector("header")
 const nbPages = pages.length 
-let pageActive = 1
-
-console.log(nbPages)
+let pageActive = 1 // ma page active = index +1
 
 // 1 AJOUT DES NUMEROS DE PAGE DANS LE HEADER
 

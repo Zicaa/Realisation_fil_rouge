@@ -1,7 +1,7 @@
 <?php
 // requête préparée qui insère les données dans la table client
 try {
-    $requete = $database->prepare("INSERT INTO client SET
+    $query = $database->prepare("INSERT INTO client SET
         nom_client = :nom_client,
         prenom_client = :prenom_client,
         adresse_client = :adresse_client,
@@ -14,7 +14,7 @@ try {
     ); 
     
     // insertion dans la BDD des données du formulaire
-    $execution = $requete->execute(array(
+    $execution = $query->execute(array(
         'nom_client' => $nom, 
         'prenom_client' => $prenom, 
         'adresse_client' => $adresse, 

@@ -28,7 +28,6 @@ try {
 
     // Si la requête est exécutée je renvoie l'utilisateur sur sa page de compte
     if ($execution){
-        setcookie("username",$user['prenom_client']);
         echo "<script type='text/javascript'>window.location.replace('../controler/controlerCompteCreate.php');</script>";
     }
     // Si la requête échoue, un message d'erreur s'affiche et renvoie l'utilisateur sur le formulaire

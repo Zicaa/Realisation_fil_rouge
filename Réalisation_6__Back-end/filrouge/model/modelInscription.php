@@ -26,7 +26,6 @@ try {
     ));
 
     if ($execution){
-        setcookie("username",$user['prenom_client']);
         echo "<script type='text/javascript'>window.location.replace('../controler/controlerCompteCreate.php');</script>";
     }
 

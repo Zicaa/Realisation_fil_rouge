@@ -107,7 +107,7 @@
     <h1 id="bienvenue">Bienvenue cher client</h1>
     <nav>
         <ul>
-            <li><img src="../images/Logo.svg" id="logo" alt="logo"></li>
+            <li><img src="../images/Logo.svg" id="logo" alt="logo"></img></li>
             <li><a href="../controler/controlerCompte.php"><input type="submit" value="Mon compte"></a></li>
             <li><a href="../vue/vueConnexion.php"><input type="submit" value="Se déconnecter"></a></li>
         </ul>

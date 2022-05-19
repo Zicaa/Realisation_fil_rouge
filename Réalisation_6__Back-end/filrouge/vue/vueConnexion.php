@@ -15,7 +15,6 @@
                                 <input type ="text" name="pseudo" class="form-control" placeholder="Pseudo" required="required" autocomplete="off">
                                 <input type ="password" name="mdp" class="form-control" placeholder="Mot de passe" required="required" autocomplete="off">
                                 <button type ="submit" value=connexion>Connexion</button>
-                            </div>
                         <button type ="button"><a href="vueInscription.php">Inscription</a></button>
                     </form>
         </main>

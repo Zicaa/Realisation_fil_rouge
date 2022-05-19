@@ -1,5 +1,5 @@
 <?php
-// condition qui vérifie si la colonne "prénom" de la BDD est renseignée
+// condition qui vérifie si le prénom stocké dans le cookie est renseigné
 if(isset($_COOKIE["username"]))
 {
     // afficher le prénom du client dans une alerte et l'insérer dans mon H1

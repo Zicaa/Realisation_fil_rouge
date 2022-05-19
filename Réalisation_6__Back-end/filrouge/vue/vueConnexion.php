@@ -20,8 +20,8 @@
                             <div class="form-group">
                                 <button type ="submit" value=connexion>Connexion</button>
                             </div>
+                        <button type ="button"><a href="vueInscription.php">Inscription</a></button>
                     </form>
-                <button type ="button"><a href="vueInscription.php">Inscription</a></button>
             </div>
         </main>
     </body>

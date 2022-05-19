@@ -108,8 +108,8 @@
     <nav>
         <ul>
             <li><img src="../images/Logo.svg" id="logo" alt="logo"></img></li>
-            <li><a href="../controler/controlerCompte.php"><input type="submit" value="Mon compte"></a></li>
-            <li><a href="../vue/vueConnexion.php"><input type="submit" value="Se déconnecter"></a></li>
+            <li><a href="../controler/controlerCompte.php"><input type="submit" value="Mon compte"></li>
+            <li><a href="../vue/vueConnexion.php"><input type="submit" value="Se déconnecter"></li>
         </ul>
     </nav>
     <div><img src ="../images/amethyst.png" alt="img"/></div>

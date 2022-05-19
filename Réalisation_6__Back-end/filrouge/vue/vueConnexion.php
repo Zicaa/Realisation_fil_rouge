@@ -18,7 +18,6 @@
                             </div>
                         <button type ="button"><a href="vueInscription.php">Inscription</a></button>
                     </form>
-            </div>
         </main>
     </body>
 </html>

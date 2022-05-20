@@ -640,7 +640,7 @@
 													"lineColor": "#ffffff",
 													"fillColor": "#b6ff6d",
 													"font": "Arial;15;0",
-													"left": 112,
+													"left": 96,
 													"top": 600,
 													"height": 15
 												},
@@ -653,11 +653,11 @@
 													"lineColor": "#ffffff",
 													"fillColor": "#b6ff6d",
 													"font": "Arial;15;1",
-													"left": 637,
+													"left": 629,
 													"top": 871,
 													"width": 183,
 													"height": 30,
-													"text": "Afficher un message de validation",
+													"text": "Afficher un message de bienvenue",
 													"wordWrap": true
 												},
 												{
@@ -670,7 +670,7 @@
 													"lineColor": "#ffffff",
 													"fillColor": "#b6ff6d",
 													"font": "Arial;15;0",
-													"left": 112,
+													"left": 96,
 													"top": 600,
 													"width": 100.0048828125,
 													"height": 15,
@@ -686,7 +686,7 @@
 													"lineColor": "#ffffff",
 													"fillColor": "#b6ff6d",
 													"font": "Arial;15;0",
-													"left": 112,
+													"left": 96,
 													"top": 600,
 													"horizontalAlignment": 1,
 													"wordWrap": true
@@ -695,7 +695,7 @@
 											"lineColor": "#ffffff",
 											"fillColor": "#b6ff6d",
 											"font": "Arial;15;0",
-											"left": 632,
+											"left": 624,
 											"top": 864,
 											"width": 193,
 											"height": 42,
@@ -720,7 +720,7 @@
 									"fillColor": "#b6ff6d",
 									"font": "Arial;15;0",
 									"containerChangeable": true,
-									"left": 632,
+									"left": 624,
 									"top": 864,
 									"width": 193,
 									"height": 65,
@@ -1522,8 +1522,8 @@
 											},
 											"visible": false,
 											"font": "Arial;13;0",
-											"left": 918,
-											"top": 850,
+											"left": 914,
+											"top": 851,
 											"height": 13,
 											"alpha": 1.5707963267948966,
 											"distance": 15,
@@ -1543,8 +1543,8 @@
 											},
 											"visible": null,
 											"font": "Arial;13;0",
-											"left": 922,
-											"top": 864,
+											"left": 918,
+											"top": 865,
 											"height": 13,
 											"alpha": 1.5707963267948966,
 											"distance": 30,
@@ -1564,8 +1564,8 @@
 											},
 											"visible": false,
 											"font": "Arial;13;0",
-											"left": 909,
-											"top": 821,
+											"left": 905,
+											"top": 822,
 											"height": 13,
 											"alpha": -1.5707963267948966,
 											"distance": 15,
@@ -1583,7 +1583,7 @@
 										"$ref": "AAAAAAF/sTcHlYCmVuo="
 									},
 									"lineStyle": 1,
-									"points": "1004:817;825:868",
+									"points": "1004:817;817:869",
 									"showVisibility": true,
 									"nameLabel": {
 										"$ref": "AAAAAAF/sUS6xYHA5/Y="
@@ -1735,7 +1735,7 @@
 											},
 											"visible": false,
 											"font": "Arial;13;0",
-											"left": 512,
+											"left": 508,
 											"top": 905,
 											"height": 13,
 											"alpha": 1.5707963267948966,
@@ -1756,7 +1756,7 @@
 											},
 											"visible": null,
 											"font": "Arial;13;0",
-											"left": 512,
+											"left": 508,
 											"top": 920,
 											"height": 13,
 											"alpha": 1.5707963267948966,
@@ -1777,7 +1777,7 @@
 											},
 											"visible": false,
 											"font": "Arial;13;0",
-											"left": 511,
+											"left": 507,
 											"top": 876,
 											"height": 13,
 											"alpha": -1.5707963267948966,
@@ -1796,7 +1796,7 @@
 										"$ref": "AAAAAAF8VkKKJzojnKM="
 									},
 									"lineStyle": 1,
-									"points": "631:897;393:898",
+									"points": "623:897;393:898",
 									"showVisibility": true,
 									"nameLabel": {
 										"$ref": "AAAAAAF/sUfLP4ICz3A="
@@ -3663,7 +3663,7 @@
 									"_parent": {
 										"$ref": "AAAAAAF8NiVyx5n4HHA="
 									},
-									"name": "Afficher un message de validation"
+									"name": "Afficher un message de bienvenue"
 								},
 								{
 									"_type": "UMLAction",

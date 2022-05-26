@@ -277,11 +277,16 @@ WHERE `nom_client` = (
     FROM `client`
     LIMIT 1
   );
-  
+
+use les_cailloux_de_zicaa;
 SELECT *
-FROM `commande`
-WHERE `nom_client` IN (
-    SELECT `nom_client`
-    FROM `client`
-    WHERE `prix_final` = "20"
+FROM `client`
+WHERE `id_client` IN (
+    SELECT `numero_commande`
+    FROM `commande`
+    WHERE `montant_commande` = "15"
   );
+
+SELECT id_fournisseur, nom_fournisseur, nom_produit, prix_produit
+FROM produit
+INNER JOIN fournisseur WHERE produit.id_admin = fournisseur.id_admin;

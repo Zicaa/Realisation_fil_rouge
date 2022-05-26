@@ -42,7 +42,15 @@ insert into produit (id_produit, nom_produit, type_produit, prix_produit, id_adm
 (null,"labradorite galet","galet", "40", "1"),
 (null,"géode améthyste","géode", "150", "1");
 
+insert into fournisseur (id_fournisseur, id_admin, nom_fournisseur, email_fournisseur, telephone_fournisseur, adresse_fournisseur, CP_fournisseur, ville_fournisseur) values
+(null, null,"PIERRES NAT", "pierre-nat@mail.com", "0620000000", "20 rue de Montpellier", "34000", "MONTPELLIER"),
+(null, null,"OMESENS", "omesens.com", "0621000000", "20 rue de TOULOUSE", "31000", "TOULOUSE"),
+(null, null,"PIERRES NAT", "pierre-nat@mail.com", "0620000000", "20 rue de Montpellier", "34000", "MONTPELLIER"),
+(null, null,"PIERRES NAT", "pierre-nat@mail.com", "0620000000", "20 rue de Montpellier", "34000", "MONTPELLIER"),
+(null, null,"PIERRES NAT", "pierre-nat@mail.com", "0620000000", "20 rue de Montpellier", "34000", "MONTPELLIER");
+
 insert into utilisateur (id_utilisateur, identifiant_utilisateur) values
 (null,"identifiant1"),
 (null,"identifiant2"),
 (null,"identifiant3");
+
